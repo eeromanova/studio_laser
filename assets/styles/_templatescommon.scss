@@ -1,0 +1,13 @@
+@mixin btn($width, $height, $bgcolor, $color) {
+  width: $width;
+  height: $height;
+  background-color: $bgcolor;
+  color: $color;
+  font-family: $fontmain;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+}

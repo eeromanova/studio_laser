@@ -1,1 +1,118 @@
-/*# sourceMappingURL=style.css.map */
+.header {
+  width: 100vw;
+  height: 860px;
+  background-image: url(../images/header.png);
+  background-size: cover;
+}
+
+.header__container {
+  margin: auto 10vw;
+  background: transparent;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav .header__logo {
+  width: 180px;
+  height: 80px;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+}
+
+.header__menu_item {
+  margin-left: 2vw;
+  color: var(--unnamed, #4E2956);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  background: transparent;
+  border: none;
+}
+
+.dropdown-item {
+  font-size: 8px;
+}
+
+.header__socials_tel {
+  width: 31.507px;
+  height: 30.75px;
+  margin-right: 3vw;
+}
+
+.header__socials_tg {
+  width: 36.758px;
+  height: 36px;
+  margin-right: 3vw;
+}
+
+.header__socials_wa {
+  width: 36.758px;
+  height: 33.75px;
+}
+
+.header__main {
+  margin-top: 20vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: var(--unnamed, #4E2956);
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__button {
+  width: 339px;
+  height: 75px;
+  background-color: #5B495F;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+}
+
+.h1 {
+  font-size: 55px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 2.75px;
+}
+
+.h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0.5px;
+}
+
+.header__main_text {
+  margin-top: 5vh;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 1.05px;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=style.css.map */
