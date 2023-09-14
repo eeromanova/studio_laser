@@ -1,7 +1,7 @@
 .header {
   width: 100vw;
   height: 860px;
-  background-image: url(../images/header.png);
+  background-image: url(../images/header_1.png);
 //   background-color: linear-gradient(
 //     180deg,
 //     #dfe4eb 0%,
@@ -12,7 +12,7 @@
 }
 .header__container {
   margin: auto 10vw;
-  background: transparent;
+  background-color: transparent;
 }
 .header__nav {
   display: flex;
@@ -35,7 +35,7 @@ height: 80px;
   font-family: $fontmain;
   font-size: 15px;
 font-style:normal;
-font-weight: 600;
+font-weight: 500;
 }
 .dropdown-menu {
     background: transparent;
@@ -47,12 +47,12 @@ font-weight: 600;
 .header__socials_tel {
     width: 31.507px;
 height: 30.75px;
-margin-right: 3vw;
+margin-right: 5px;
 }
 .header__socials_tg {
     width: 36.758px;
 height: 36px;
-margin-right: 3vw;
+margin-right: 5px;
 }
 .header__socials_wa {
     width: 36.758px;
@@ -68,12 +68,13 @@ height: 33.75px;
 }
 .header__button {
   @include btn(339px, 75px, $bgcolordark, $colortextlight);
+  margin-top: 10%;
 }
 .h1 {
   font-size: 55px;
   font-family: $fontmain;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 130%;
   letter-spacing: 2.75px;
 }
@@ -81,7 +82,7 @@ height: 33.75px;
   font-size: 20px;
   font-family: $fontmain;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 140%;
   letter-spacing: 0.5px;
 }
@@ -89,8 +90,7 @@ height: 33.75px;
     margin-top: 5vh;
   font-size: 17px;
   font-family: $fontmain;
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   line-height: 150%;
-  letter-spacing: 1.05px;
 }
