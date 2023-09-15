@@ -171,3 +171,32 @@ body {
   width: auto;
   height: auto;
 }
+
+.video-container {
+  position: relative;
+  width: 732px; /* Задайте нужную ширину контейнера */
+  height: 412px; /* Задайте нужную высоту контейнера */
+}
+
+.video-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Переместите обложку поверх видео */
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0; /* Обеспечьте, чтобы видео было "под" обложкой */
+}
