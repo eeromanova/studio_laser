@@ -116,3 +116,21 @@
 body {
   overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
+
+/* Здесь стили Орынбике*/
+.section__studio {
+  margin-top: 20vh;
+  left: 525px;
+  width: 30%;
+  color: var(--unnamed, #4E2956);
+  font-family: "Comfortaa", italic;
+}
+
+.h4 {
+  font-size: 55px;
+  font-family: "Comfortaa", italic;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80%;
+  letter-spacing: 5%;
+}
