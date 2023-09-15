@@ -1,123 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/styles/normalize.css" />
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
-    <title>studiomysecret</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__nav">
-          <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
-          <ul class="header__menu navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle header__menu_item"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >О нас</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#">Студия</a>
-                </li>
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#"
-                    >Специалисты</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#"
-                    >Оборудование</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#">Отзывы</a>
-                </li>
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#"
-                    >Контакты</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle header__menu_item"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Услуги</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#"
-                    >Диоидная эпиляция лица</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#"
-                    >Диоидная эпиляция ног</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#"
-                    >Диоидная эпиляция тела</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item header__menu_item" href="#"
-                    >Диоидная эпиляции зоны бикини</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="header__menu_item nav-link" aria-current="page" href="#"
-                >Об эпиляции</a
-              >
-            </li>
-          </ul>
-          <div class="header__socials">
-            <a href="#" target="_blank"
-              ><img
-                class="header__socials_tel"
-                src="assets/svg/tel.svg"
-                alt="tel"
-            /></a>
-            <a href="#" target="_blank"
-              ><img class="header__socials_tg" src="assets/svg/tg.svg" alt="tg"
-            /></a>
-            <a href="#" target="_blank"
-              ><img class="header__socials_wa" src="assets/svg/wa.svg" alt="wa"
-            /></a>
-          </div>
-        </div>
-        <div class="header__main">
-          <h3 class="h3">Лазерная эпиляция в Ростове-на-Дону</h3>
-          <h1>Студия "Мой секрет"</h1>
-          <p class="header__main_text">
-            Мы приглашаем вас в невероятное путешествие к идеальной коже, где
-            современные технологии и опытные специалисты сливаются в единую
-            гармонию. Добро пожаловать в мир совершенства!
-          </p>
-          <button class="header__button">Записаться сейчас</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/styles/normalize.css" />
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <title>studiomysecret</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__nav">
+        <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
+        <ul class="header__menu navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle header__menu_item" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">О нас</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Студия</a>
+              </li>
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Специалисты</a>
+              </li>
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Оборудование</a>
+              </li>
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Отзывы</a>
+              </li>
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Контакты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle header__menu_item" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Услуги</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Диоидная эпиляция лица</a>
+              </li>
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Диоидная эпиляция ног</a>
+              </li>
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Диоидная эпиляция тела</a>
+              </li>
+              <li>
+                <a class="dropdown-item header__menu_item" href="#">Диоидная эпиляции зоны бикини</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="header__menu_item nav-link" aria-current="page" href="#">Об эпиляции</a>
+          </li>
+        </ul>
+        <div class="header__socials">
+          <a href="#" target="_blank"><img class="header__socials_tel" src="assets/svg/tel.svg" alt="tel" /></a>
+          <a href="#" target="_blank"><img class="header__socials_tg" src="assets/svg/tg.svg" alt="tg" /></a>
+          <a href="#" target="_blank"><img class="header__socials_wa" src="assets/svg/wa.svg" alt="wa" /></a>
         </div>
       </div>
+<<<<<<< HEAD
     </header>
     <main>
       <section></section>
@@ -143,3 +97,56 @@
     ></script>
   </body>
 </html>
+=======
+      <div class="header__main">
+        <h3 class="h3">Лазерная эпиляция в Ростове-на-Дону</h3>
+        <h1>Студия "Мой секрет"</h1>
+        <p class="header__main_text">
+          Мы приглашаем вас в невероятное путешествие к идеальной коже, где
+          современные технологии и опытные специалисты сливаются в единую
+          гармонию. Добро пожаловать в мир совершенства!
+        </p>
+        <button class="header__button">Записаться сейчас</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section></section>
+    <!-- Секция О нас - ответственный Софья -->
+    <section></section>
+    <!-- Секция Цены - ответственный Таисия -->
+    <section class="instructions">
+
+      <h3 class="h3">Красота, Комфорт, Безопасность</h3>
+      <section class="before-instruction">
+        <div class="h2">Перед Лазерной Эпиляцией</div>
+        <ul>
+          <li>За 30 дней до процедуры удалите волосы только при помощи бритвы или крема-депилятора (не пользуясь
+            пинцетами, электродепиляторами, не применяйте биодепиляцию).</li>
+          <li>Ограничить посещения солярия и прямого воздействия
+            солнечных лучей:
+            — за две недели до и после процедуры.</li>
+          <li>Длина волос в зоне обработки на момент проведения
+            процедуры не более 1мм:
+            — темный волос убрать накануне перед процедурой;
+            — светлый волос убрать за 1 день до.</li>
+          <li>Не наносить косметические средства на обрабатываемую зону в день проведения процедуры (крема, масла,
+            декоративная косметика, скраб, гель для душа, дезодорант).</li>
+        </ul>
+      </section>
+    </section>
+    <!-- Секция Инструкция Перед и после и форма с вопросом - ответственный Оля -->
+    <section></section>
+    <!-- Секция Блог - ответственный Таисия -->
+    <section></section>
+    <!-- Секция Отзывы - ответственный Ира -->
+    <section></section>
+    <!-- Секция Адрес - ответственный Оля -->
+  </main>
+  <footer></footer>
+  <!-- Ответственный Ира -->
+  <script type="module" src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+>>>>>>> main
