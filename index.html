@@ -95,9 +95,47 @@
   </header>
   <main>
     <section></section>
+    <section>
+      <div class="section__studio">
+        <h4 class="h4">Наша студия</h4>
+      </div>
+      <div class="video-container">
+        <img class="video-overlay" src="assets/images/cover.png" alt="Обложка видео">
+        <button class="play-button" onclick="playVideo()">
+          <img src="assets/images/Vector4.png" alt="Кнопка воспроизведения">
+        </button>
+        <video id="video" controls style="display: none;">
+          <source src="assets/video/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <script>
+        function playVideo() {
+          var video = document.getElementById("video");
+          video.style.display = "block";
+          video.play();
+          var playButton = document.querySelector(".play-button");
+          playButton.style.display = "none";
+        }
+      </script>
+      <div class="section__advantages">
+        <a href="https://www.example.com">
+          <img src="assets/images/Group13.png" alt="Безопасность">
+        </a>
+        <a href="https://www.example.com">
+          <img src="assets/images/Group10.png" alt="современный лазер">
+        </a>
+        <a href="https://www.example.com">
+          <img src="assets/images/Group14.png" alt="сертификация">
+        </a>
+        <a href="https://www.example.com">
+          <img src="assets/images/Group12.png" alt="высокий рейтинг">
+        </a>
+      </div>
+    </section>
     <!-- Секция О нас - ответственный Софья -->
     <section></section>
     <!-- Секция Цены - ответственный Таисия -->
+
     <section class="instructions">
 
       <h3 class="h3">Красота, Комфорт, Безопасность</h3>
