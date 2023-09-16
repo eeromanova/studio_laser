@@ -82,44 +82,47 @@
         <button class="header__button">Записаться сейчас</button>
       </div>
     </div>
+
+
   </header>
   <main>
+    <section></section>
     <section>
       <div class="section__studio">
-      <h4 class="h4">Наша студия</h4>
+        <h4 class="h4">Наша студия</h4>
       </div>
       <div class="video-container">
         <img class="video-overlay" src="assets/images/cover.png" alt="Обложка видео">
         <button class="play-button" onclick="playVideo()">
-            <img src="assets/images/Vector4.png" alt="Кнопка воспроизведения">
+          <img src="assets/images/Vector4.png" alt="Кнопка воспроизведения">
         </button>
         <video id="video" controls style="display: none;">
-            <source src="assets/video/video.mp4" type="video/mp4">
+          <source src="assets/video/video.mp4" type="video/mp4">
         </video>
-    </div>
-    <script>
+      </div>
+      <script>
         function playVideo() {
-            var video = document.getElementById("video");
-            video.style.display = "block";
-            video.play();
-            var playButton = document.querySelector(".play-button");
-            playButton.style.display = "none";
+          var video = document.getElementById("video");
+          video.style.display = "block";
+          video.play();
+          var playButton = document.querySelector(".play-button");
+          playButton.style.display = "none";
         }
       </script>
       <div class="section__advantages">
-      <a href="https://www.example.com">
-        <img src="assets/images/Group13.png" alt="Безопасность">
-      </a>
-      <a href="https://www.example.com">
-        <img src="assets/images/Group10.png" alt="современный лазер">
-      </a>
-      <a href="https://www.example.com">
-        <img src="assets/images/Group14.png" alt="сертификация">
-      </a>
-      <a href="https://www.example.com">
-        <img src="assets/images/Group12.png" alt="высокий рейтинг">
-      </a>
-    </div>
+        <a href="https://www.example.com">
+          <img src="assets/images/Group13.png" alt="Безопасность">
+        </a>
+        <a href="https://www.example.com">
+          <img src="assets/images/Group10.png" alt="современный лазер">
+        </a>
+        <a href="https://www.example.com">
+          <img src="assets/images/Group14.png" alt="сертификация">
+        </a>
+        <a href="https://www.example.com">
+          <img src="assets/images/Group12.png" alt="высокий рейтинг">
+        </a>
+      </div>
     </section>
     <!-- Секция О нас - ответственный Софья -->
     <section></section>
@@ -129,28 +132,71 @@
 
       <h3 class="h3">Красота, Комфорт, Безопасность</h3>
       <section class="before-instruction">
-        <div class="h2">Перед Лазерной Эпиляцией</div>
-        <ul>
-          <li>За 30 дней до процедуры удалите волосы только при помощи бритвы или крема-депилятора (не пользуясь
+        <h2 class="h2">Перед Лазерной Эпиляцией</h2>
+        <ul class="before-instruction__list">
+          <li class="before-instruction__list-item">За 30 дней до процедуры удалите волосы только при помощи
+            бритвы или крема-депилятора (не пользуясь
             пинцетами, электродепиляторами, не применяйте биодепиляцию).</li>
-          <li>Ограничить посещения солярия и прямого воздействия
+          <li class="before-instruction__list-item">Ограничить посещения солярия и прямого воздействия
             солнечных лучей:
             — за две недели до и после процедуры.</li>
-          <li>Длина волос в зоне обработки на момент проведения
+          <li class="before-instruction__list-item">Длина волос в зоне обработки на момент проведения
             процедуры не более 1мм:
             — темный волос убрать накануне перед процедурой;
             — светлый волос убрать за 1 день до.</li>
-          <li>Не наносить косметические средства на обрабатываемую зону в день проведения процедуры (крема, масла,
+          <li class="before-instruction__list-item">Не наносить косметические средства на обрабатываемую зону в
+            день проведения процедуры (крема, масла,
             декоративная косметика, скраб, гель для душа, дезодорант).</li>
         </ul>
       </section>
+      <section class="after-instruction">
+        <h2 class="h2">После лазерной эпиляции</h2>
+        <ul class="after-instruction__list">
+          <li class="after-instruction__list-item">Первые 1-3 дня после процедуры использовать только лечебные
+            успокаивающие крема и мази:
+            -"Хлоргексидин";
+            -"Бепантен";
+            -"Пантенол".
+          </li>
+          <li class="after-instruction__list-item">В течение 3 дней после процедур исключить:
+            -горячие ванны;
+            -сауны;
+            -бани.
+          </li>
+          <li class="after-instruction__list-item">В промежутках между процедурами:
+            -удалять волосы только при помощи бритвы, крема-депилятора или трммером;
+            -не пользоваться пинцетами, электродепиляторами;
+            -не применять биодепиляцию.
+          </li>
+          <li class="after-instruction__list-item">
+            Исполльзовать spf крем не менее 30-50 УФ защиты</li>
+        </ul>
+        <form>
+          <input type="text" placeholder="Ваше имя"><input type="text"
+            placeholder="Номер телефона"><button>Спросить</button>
+        </form>
+      </section>
+
     </section>
     <!-- Секция Инструкция Перед и после и форма с вопросом - ответственный Оля -->
     <section></section>
     <!-- Секция Блог - ответственный Таисия -->
     <section></section>
     <!-- Секция Отзывы - ответственный Ира -->
-    <section></section>
+    <section class="contacts">
+      <div class="map">
+      </div>
+      <p class="adress">Адрес: г. Ростов-на-Дону, пер. Крепостной,
+        д. 99, 2-й этаж, к.2</p>
+      <p class="phone-number">Номер телефона: +7 (961) 310-83-33</p>
+      <p class="work-time">Время работы: 9:00 - 20:00</p>
+      <div class="contacts__socials">
+        <p class="contacts__socials-header">Мы в соц.сетях:</p>
+        <a href="#" target="_blank"><img class="contacts__socials_tg" src="assets/svg/tg.svg" alt="tg" /></a>
+        <a href="#" target="_blank"><img class="contacts__socials_tel" src="assets/svg/inst.svg" alt="inst" /></a>
+        <a href="#" target="_blank"><img class="contacts__socials_wa" src="assets/svg/wa.svg" alt="wa" /></a>
+      </div>
+    </section>
     <!-- Секция Адрес - ответственный Оля -->
   </main>
   <footer></footer>
