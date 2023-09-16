@@ -118,7 +118,7 @@
 }
 
 .h2 {
-  color: #4E2956;
+  color: #4e2956;
   font-family: Noto Serif;
   font-size: 55px;
   font-style: normal;
@@ -129,11 +129,14 @@
 }
 
 .stars {
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .rating {
-  color: #4E2956;
+  color: #4e2956;
   text-align: center;
   font-family: Roboto;
   font-size: 25px;
@@ -155,8 +158,8 @@
   height: 20vh;
   padding: 10.663px 13.328px;
   border-radius: 15.994px;
-  border: 0.536px solid #BEB6BF;
-  background: #F0ECF0;
+  border: 0.536px solid #beb6bf;
+  background: #f0ecf0;
   box-shadow: 1.42857px 3.57143px 7.14286px;
   margin: 10px;
 }
@@ -185,13 +188,9 @@
 }
 
 .text1:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 body {
   overflow-x: hidden;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
