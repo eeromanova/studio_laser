@@ -118,26 +118,26 @@
 }
 
 .h2 {
-  color: #4E2956;
-  font-family: Noto Serif;
   font-size: 55px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 2.75px;
   text-align: center;
+  font-family: "Comfortaa", italic;
+  color: var(--unnamed, #4E2956);
 }
 
 .stars {
   text-align: center;
+  width: 20vw;
 }
 
 .rating {
-  color: #4E2956;
+  color: var(--unnamed, #4E2956);
   text-align: center;
-  font-family: Roboto;
+  font-family: "Comfortaa", italic;
   font-size: 25px;
-  font-style: italic;
   font-weight: 300;
   line-height: 140%;
   letter-spacing: 0.5px;
@@ -159,12 +159,13 @@
   background: #F0ECF0;
   box-shadow: 1.42857px 3.57143px 7.14286px;
   margin: 10px;
+  background-color: #5B495F;
 }
 
 .p1 {
-  color: #000;
+  color: #FFF;
   text-align: center;
-  font-family: Noto Serif;
+  font-family: Roboto;
   font-size: 17px;
   font-style: normal;
   font-weight: 800;
@@ -174,7 +175,7 @@
 }
 
 .p2 {
-  color: #000;
+  color: #FFF;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
