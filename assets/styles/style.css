@@ -114,7 +114,8 @@
 }
 
 .reviews {
-  width: 100vw;
+  width: 97vw;
+  margin-bottom: 15px;
 }
 
 .h2 {
@@ -189,6 +190,26 @@
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5B495F;
+  width: 97vw;
+  margin: 15px;
+  border-radius: 15.994px;
+}
+
+.p3 {
+  color: #FFF;
+  font-family: "Comfortaa", italic;
+}
+
+.p4 {
+  color: #FFF;
+  font-family: "Comfortaa", italic;
 }
 
 body {
