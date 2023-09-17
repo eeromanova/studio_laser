@@ -165,13 +165,13 @@
   top: 0;
   left: 0;
   -o-object-fit: cover;
-    object-fit: cover;
+     object-fit: cover;
 }
 .video-container .video-overlay {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-    object-fit: cover;
+     object-fit: cover;
 }
 .video-container .play-button {
   position: absolute;
