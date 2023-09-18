@@ -399,6 +399,26 @@ form button {
   flex-shrink: 0;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5B495F;
+  width: 97vw;
+  margin: 15px;
+  border-radius: 15.994px;
+}
+
+.p3 {
+  color: #FFF;
+  font-family: "Comfortaa", italic;
+}
+
+.p4 {
+  color: #FFF;
+  font-family: "Comfortaa", italic;
+}
+
 body {
   overflow-x: hidden;
 }
