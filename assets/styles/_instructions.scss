@@ -5,24 +5,11 @@
   justify-content: space-around;
 }
 .h2 {
+  @include h2($colortextdark);
 text-align: start;
-color: $colortextdark;
-font-family: $fontmain;
-font-size: 55px;
-font-style: normal;
-font-weight: 500;
-line-height: 130%; 
-letter-spacing: 2.75px;
 }
 .h3 {
   flex-basis: 100%;
-  color: $colortextdark;
-  font-size: 20px;
-  font-family: $fontmain;
-  font-style: normal;
-  font-weight: 200;
-  line-height: 140%;
-  letter-spacing: 0.5px;
 }
 .before-instruction{
   justify-self: flex-start;
