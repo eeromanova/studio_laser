@@ -1,0 +1,74 @@
+.instructions {
+  margin: 5% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.h2 {
+text-align: start;
+color: $colortextdark;
+font-family: $fontmain;
+font-size: 55px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; 
+letter-spacing: 2.75px;
+}
+.h3 {
+  flex-basis: 100%;
+  color: $colortextdark;
+  font-size: 20px;
+  font-family: $fontmain;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%;
+  letter-spacing: 0.5px;
+}
+.before-instruction{
+  justify-self: flex-start;
+  flex-basis: 35%;
+
+}
+.after-instruction{
+  flex-basis: 35%;
+}
+.before-instruction__list-item {
+  ul {padding-left: 0;
+    li{
+      list-style-type: none;
+    }}
+}
+.after-instruction__list-item {
+  ul {padding-left: 0;
+    li{
+      list-style-type: none;
+    }}
+}
+
+
+
+form{
+  flex-wrap: wrap;
+  display: flex;
+  margin: 60px 0 auto 0;
+  flex-basis: 100%;
+  gap: 5%;
+  justify-content: center;
+  .form-header {
+    flex-basis: 100%;
+        font-size: 25px;
+    text-align: center;
+    color: $colortextpale;
+  }
+  input{  height: 75px;
+  margin-right: 82px;
+  background-color: #F1E5E5;
+border: 1px solid $colortextdark;
+border-radius: 15px;
+padding:20px
+}
+  button {
+    @include btn(164px, 75px, $bgcolordark, $colortextlight);
+  }
+
+}
