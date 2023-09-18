@@ -2,13 +2,13 @@
   width: 100vw;
   height: 860px;
   background-image: url(../images/header_1.png);
-//   background-color: linear-gradient(
-//     180deg,
-//     #dfe4eb 0%,
-//     rgba(223, 228, 235, 0.8) 100%
-//   );
+  //   background-color: linear-gradient(
+  //     180deg,
+  //     #dfe4eb 0%,
+  //     rgba(223, 228, 235, 0.8) 100%
+  //   );
   background-size: cover;
-//   opacity: 70%;
+  //   opacity: 70%;
 }
 .header__container {
   margin: auto 10vw;
@@ -20,47 +20,47 @@
   align-items: center;
   .header__logo {
     width: 180px;
-height: 80px;
+    height: 80px;
   }
 }
 .header__menu {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10%;
-  }
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+}
 .header__menu_item {
-    margin-left: 2vw;
+  margin-left: 2vw;
   color: $colortextdark;
   text-decoration: none;
   font-family: $fontmain;
   font-size: 15px;
-font-style:normal;
-font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
 }
 .dropdown-menu {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
 .dropdown-item {
-    font-size: 8px;
+  font-size: 8px;
 }
 .header__socials_tel {
-    width: 31.507px;
-height: 30.75px;
-margin-right: 5px;
+  width: 31.507px;
+  height: 30.75px;
+  margin-right: 5px;
 }
 .header__socials_tg {
-    width: 36.758px;
-height: 36px;
-margin-right: 5px;
+  width: 36.758px;
+  height: 36px;
+  margin-right: 5px;
 }
 .header__socials_wa {
-    width: 36.758px;
-height: 33.75px;
+  width: 36.758px;
+  height: 33.75px;
 }
 .header__main {
   margin-top: 20vh;
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   color: $colortextdark;
@@ -71,12 +71,12 @@ height: 33.75px;
   margin-top: 10%;
 }
 .h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-family: $fontmain;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 130%;
-  letter-spacing: 2.75px;
+  letter-spacing: 2px;
 }
 .h3 {
   font-size: 20px;
@@ -87,7 +87,7 @@ height: 33.75px;
   letter-spacing: 0.5px;
 }
 .header__main_text {
-    margin-top: 5vh;
+  margin-top: 5vh;
   font-size: 17px;
   font-family: $fontmain;
   font-style: normal;
