@@ -304,13 +304,16 @@ form button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .blog_wrapper .card_wrapper {
   display: flex;
   flex-direction: column;
-  width: 30vw;
   justify-content: center;
   background-color: #89B1A9;
+  width: 30vw;
+  height: 70vh;
+  margin: 10px;
 }
 .blog_wrapper .card_wrapper .card__img {
   height: 70%;

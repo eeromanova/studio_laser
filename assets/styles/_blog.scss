@@ -1,16 +1,23 @@
+.h2__blog {
+    @include h2
+}
+
 .blog_wrapper {
     width: 100%;
     background-image: url(/assets/images/img_blog/backgrimg.png);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 .card_wrapper {
     display: flex;
     flex-direction: column;
-    width: 30vw;
-   justify-content: center;
+    justify-content: center;
     background-color: $colortextgreenlight;
+    width: 30vw;
+    height: 70vh;
+    margin: 10px;
 
 .card__img {
     height: 70%;}
