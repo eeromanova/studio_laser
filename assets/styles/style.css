@@ -298,6 +298,36 @@ form button {
   letter-spacing: 1.25px;
 }
 
+.blog_wrapper {
+  width: 100%;
+  background-image: url(/assets/images/img_blog/backgrimg.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.blog_wrapper .card_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  justify-content: center;
+  background-color: #89B1A9;
+}
+.blog_wrapper .card_wrapper .card__img {
+  height: 70%;
+}
+.blog_wrapper .card_wrapper .card__link {
+  padding-left: 10px;
+  padding-top: 10px;
+  text-decoration: none;
+  color: #FFF;
+  color: #FFF;
+  text-overflow: ellipsis;
+  font-family: Noto Serif;
+  font-size: 27.691px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .reviews {
   width: 100vw;
 }
