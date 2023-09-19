@@ -6,35 +6,49 @@
 }
 .h2 {
   @include h2($colortextdark);
-text-align: start;
+  text-align: start;
 }
 .h3 {
   flex-basis: 100%;
 }
-.before-instruction{
+.before-instruction {
   justify-self: flex-start;
-  flex-basis: 35%;
-
-}
-.after-instruction{
   flex-basis: 35%;
 }
 .before-instruction__list-item {
-  ul {padding-left: 0;
-    li{
-      list-style-type: none;
-    }}
+  padding-left: 0;
+  list-style-type: none;
+  font-family: $fontmain;
+  font-size: 15px;
+}
+.after-instruction {
+  flex-basis: 35%;
 }
 .after-instruction__list-item {
-  ul {padding-left: 0;
-    li{
-      list-style-type: none;
-    }}
+  padding-left: 0;
+  list-style-type: none;
+  font-family: $fontmain;
+  font-size: 15px;
 }
+// .before-instruction__list-item {
+//   ul {padding-left: 0;
+//     li{
+//       list-style-type: none;
+//       font-family: $fontmain;
+//       font-size: 15px;
 
+//     }}
+// }
+// .after-instruction__list-item {
+//   ul {
+//     padding-left: 0;
+//     li {
+//       list-style-type: none;
+//     }
+//   }
+// }
 
-
-form{
+form {
   flex-wrap: wrap;
   display: flex;
   margin: 60px 0 auto 0;
@@ -43,19 +57,21 @@ form{
   justify-content: center;
   .form-header {
     flex-basis: 100%;
-        font-size: 25px;
+    font-size: 25px;
+    font-family: $fontmain;
     text-align: center;
     color: $colortextpale;
   }
-  input{  height: 75px;
-  margin-right: 82px;
-  background-color: #F1E5E5;
-border: 1px solid $colortextdark;
-border-radius: 15px;
-padding:20px
-}
+  input {
+    height: 75px;
+    margin-right: 82px;
+    font-family: $fontmain;
+    background-color: #f1e5e5;
+    border: 1px solid $colortextdark;
+    border-radius: 15px;
+    padding: 20px;
+  }
   button {
     @include btn(164px, 75px, $bgcolordark, $colortextlight);
   }
-
 }
