@@ -1,5 +1,5 @@
 .h2__blog {
-    @include h2
+    @include h2($color);
 }
 
 .blog_wrapper {
@@ -20,7 +20,8 @@
     margin: 10px;
 
 .card__img {
-    height: 70%;}
+    height: 70vh;
+    width: 80vw;}
 
 .card__link {
    padding-left: 10px;
