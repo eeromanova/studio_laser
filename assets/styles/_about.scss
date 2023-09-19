@@ -83,8 +83,8 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    font-family: $fontmain;
-    color: $colortextgreenlight;
-    font-size: 20px;
+  }
+  .advantages-h3 {
+    @include h3($colortextgreenlight);
     font-weight: 300;
   }

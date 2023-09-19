@@ -8,25 +8,32 @@
   @include h2($colortextdark);
 text-align: start;
 }
-.h3 {
+.instruction-h3 {
+  @include h3($colortextdark);
   flex-basis: 100%;
+  margin-bottom: 5%;
 }
 .before-instruction{
   justify-self: flex-start;
-  flex-basis: 35%;
+  flex-basis: 40%;
 
 }
 .after-instruction{
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 .before-instruction__list-item {
+  font-family: $fontmain;
+  color: $colortextdark;
   ul {padding-left: 0;
     li{
       list-style-type: none;
     }}
 }
 .after-instruction__list-item {
+  font-family: $fontmain;
+  color: $colortextdark;
   ul {padding-left: 0;
+
     li{
       list-style-type: none;
     }}
