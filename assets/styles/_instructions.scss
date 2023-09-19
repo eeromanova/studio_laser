@@ -15,25 +15,15 @@
 }
 .before-instruction {
   justify-self: flex-start;
-  flex-basis: 35%;
-}
-.before-instruction__list-item {
-  padding-left: 0;
-  list-style-type: none;
-  font-family: $fontmain;
-  font-size: 15px;
+  flex-basis: 45%;
 }
 .after-instruction {
-  flex-basis: 35%;
+  flex-basis: 45%;
 }
-.after-instruction__list-item {
-  padding-left: 0;
-  list-style-type: none;
+.before-instruction__list-item {
   font-family: $fontmain;
   font-size: 15px;
   color: $colortextdark;
-}
-.before-instruction__list-item {
   ul {padding-left: 0;
     li{
       list-style-type: none;
@@ -41,6 +31,9 @@
     }}
 }
 .after-instruction__list-item {
+  font-family: $fontmain;
+  font-size: 15px;
+  color: $colortextdark;
   ul {
     padding-left: 0;
     li {
@@ -65,7 +58,7 @@ form {
   }
   input {
     height: 75px;
-    margin-right: 82px;
+    // margin-right: 82px;
     font-family: $fontmain;
     background-color: $bgcolorlight;
     border: 1px solid $bgcolorlight;
