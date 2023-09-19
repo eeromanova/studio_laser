@@ -141,8 +141,6 @@
   font-family: "Comfortaa", italic;
   font-size: 45px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 80%;
 }
 
 .video-container {
@@ -207,6 +205,15 @@
   text-align: center;
 }
 
+.advantages-h3 {
+  color: #89B1A9;
+  font-family: "Comfortaa", italic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-weight: 300;
+}
+
 .instructions {
   margin: 5% 10%;
   display: flex;
@@ -219,13 +226,17 @@
   font-family: "Comfortaa", italic;
   font-size: 45px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 80%;
   text-align: start;
 }
 
-.h3 {
+.instruction-h3 {
+  color: var(--unnamed, #4E2956);
+  font-family: "Comfortaa", italic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
   flex-basis: 100%;
+  margin-bottom: 5%;
 }
 
 .before-instruction {
@@ -294,8 +305,6 @@ form button {
   font-family: "Comfortaa", italic;
   font-size: 45px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 80%;
 }
 
 .blog_wrapper {
@@ -468,8 +477,6 @@ form button {
   font-family: "Comfortaa", italic;
   font-size: 45px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 80%;
 }
 
 .img__article {

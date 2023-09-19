@@ -8,8 +8,10 @@
   @include h2($colortextdark);
   text-align: start;
 }
-.h3 {
+.instruction-h3 {
+  @include h3($colortextdark);
   flex-basis: 100%;
+  margin-bottom: 5%;
 }
 .before-instruction {
   justify-self: flex-start;
