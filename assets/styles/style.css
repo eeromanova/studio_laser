@@ -157,14 +157,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .video-container .video-overlay {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .video-container .play-button {
   position: absolute;
@@ -321,33 +319,31 @@ form button {
 }
 
 .reviews {
-  width: 100vw;
+  width: 97vw;
+  margin-bottom: 15px;
 }
 
 .h2 {
-  color: #4e2956;
-  font-family: Noto Serif;
   font-size: 55px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 2.75px;
   text-align: center;
+  font-family: "Comfortaa", italic;
+  color: var(--unnamed, #4E2956);
 }
 
 .stars {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  text-align: center;
+  width: 20vw;
 }
 
 .rating {
-  color: #4e2956;
+  color: var(--unnamed, #4E2956);
   text-align: center;
-  font-family: Roboto;
+  font-family: "Comfortaa", italic;
   font-size: 25px;
-  font-style: italic;
   font-weight: 300;
   line-height: 140%;
   letter-spacing: 0.5px;
@@ -365,16 +361,17 @@ form button {
   height: 20vh;
   padding: 10.663px 13.328px;
   border-radius: 15.994px;
-  border: 0.536px solid #beb6bf;
-  background: #f0ecf0;
+  border: 0.536px solid #BEB6BF;
+  background: #F0ECF0;
   box-shadow: 1.42857px 3.57143px 7.14286px;
   margin: 10px;
+  background-color: #5B495F;
 }
 
 .p1 {
-  color: #000;
+  color: #FFF;
   text-align: center;
-  font-family: Noto Serif;
+  font-family: Roboto;
   font-size: 17px;
   font-style: normal;
   font-weight: 800;
@@ -384,7 +381,7 @@ form button {
 }
 
 .p2 {
-  color: #000;
+  color: #FFF;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -395,14 +392,15 @@ form button {
 }
 
 .text1:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 .contacts {
   margin: 5% 10%;
   display: grid;
-  -moz-column-gap: 56px;
-       column-gap: 56px;
+  column-gap: 56px;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 0.5fr 3fr;
 }
@@ -423,6 +421,28 @@ form button {
   flex-shrink: 0;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5B495F;
+  width: 97vw;
+  margin: 15px;
+  border-radius: 15.994px;
+}
+
+.p3 {
+  color: #FFF;
+  font-family: "Comfortaa", italic;
+}
+
+.p4 {
+  color: #FFF;
+  font-family: "Comfortaa", italic;
+}
+
 body {
   overflow-x: hidden;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
