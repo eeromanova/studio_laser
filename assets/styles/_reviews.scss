@@ -2,19 +2,18 @@
   width: 97vw;
   margin-bottom: 15px;
 }
-.h2{
-  font-size: 55px;
-  font-style: normal;
+.reviews-h2{
+  @include h2 ($colortextdark);
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 2.75px;
   text-align: center;
-  font-family: $fontmain;
-  color: $colortextdark;
   }
   .stars{
   text-align: center;
-  width: 20vw;   
+  width: 20vw;
+  display: block;
+  margin: 0 auto;
   }
   .rating{
   color: $colortextdark;
@@ -28,22 +27,22 @@
   margin: 10px;
   }
   .text{
-      display: flex;
+    margin-left: 5%;  
+    display: flex;
       justify-content: space-between;
   }
   .text1{
   width: 30vw;
-  height: 20vh;
+  min-height: 20vh;
   padding: 10.663px 13.328px;
   border-radius: 15.994px;
-  border: 0.536px solid #BEB6BF;
-  background: #F0ECF0;
+  border: 0.536px solid $bgcolordark;
   box-shadow: 1.42857px 3.57143px 7.14286px; 
   margin: 10px;
-  background-color: $bgcolordark;
+  background-color: $bgcolorlight;
   }
   .p1{
-  color: $colortextlight;
+  color: $colortextdark;
   text-align: center;
   font-family: $fontreviews;
   font-size: 17px;
@@ -54,7 +53,7 @@
   text-decoration-line: underline;
   }
   .p2{
-  color: $colortextlight;
+  color: $colortextdark;
   text-align: center;
   font-family: $fontreviews;
   font-size: 16px;
