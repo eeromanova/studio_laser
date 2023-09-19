@@ -31,24 +31,23 @@
   list-style-type: none;
   font-family: $fontmain;
   font-size: 15px;
+  color: $colortextdark;
 }
-// .before-instruction__list-item {
-//   ul {padding-left: 0;
-//     li{
-//       list-style-type: none;
-//       font-family: $fontmain;
-//       font-size: 15px;
+.before-instruction__list-item {
+  ul {padding-left: 0;
+    li{
+      list-style-type: none;
 
-//     }}
-// }
-// .after-instruction__list-item {
-//   ul {
-//     padding-left: 0;
-//     li {
-//       list-style-type: none;
-//     }
-//   }
-// }
+    }}
+}
+.after-instruction__list-item {
+  ul {
+    padding-left: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}
 
 form {
   flex-wrap: wrap;
@@ -68,8 +67,8 @@ form {
     height: 75px;
     margin-right: 82px;
     font-family: $fontmain;
-    background-color: #f1e5e5;
-    border: 1px solid $colortextdark;
+    background-color: $bgcolorlight;
+    border: 1px solid $bgcolorlight;
     border-radius: 15px;
     padding: 20px;
   }

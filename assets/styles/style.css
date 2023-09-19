@@ -95,12 +95,11 @@
   letter-spacing: 2px;
 }
 
-.h3 {
+.header-h3 {
   color: var(--unnamed, #4E2956);
   font-family: "Comfortaa", italic;
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
   line-height: 140%;
   letter-spacing: 0.5px;
 }
@@ -141,6 +140,7 @@
   font-family: "Comfortaa", italic;
   font-size: 45px;
   font-style: normal;
+  text-align: center;
 }
 
 .video-container {
@@ -211,7 +211,6 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  font-weight: 300;
 }
 
 .instructions {
@@ -234,7 +233,6 @@
   font-family: "Comfortaa", italic;
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
   flex-basis: 100%;
   margin-bottom: 5%;
 }
@@ -260,6 +258,21 @@
   list-style-type: none;
   font-family: "Comfortaa", italic;
   font-size: 15px;
+  color: var(--unnamed, #4E2956);
+}
+
+.before-instruction__list-item ul {
+  padding-left: 0;
+}
+.before-instruction__list-item ul li {
+  list-style-type: none;
+}
+
+.after-instruction__list-item ul {
+  padding-left: 0;
+}
+.after-instruction__list-item ul li {
+  list-style-type: none;
 }
 
 form {
@@ -282,7 +295,7 @@ form input {
   margin-right: 82px;
   font-family: "Comfortaa", italic;
   background-color: #f1e5e5;
-  border: 1px solid var(--unnamed, #4E2956);
+  border: 1px solid #f1e5e5;
   border-radius: 15px;
   padding: 20px;
 }
@@ -346,20 +359,22 @@ form button {
   margin-bottom: 15px;
 }
 
-.h2 {
-  font-size: 55px;
+.reviews-h2 {
+  color: var(--unnamed, #4E2956);
+  font-family: "Comfortaa", italic;
+  font-size: 45px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 2.75px;
   text-align: center;
-  font-family: "Comfortaa", italic;
-  color: var(--unnamed, #4E2956);
 }
 
 .stars {
   text-align: center;
   width: 20vw;
+  display: block;
+  margin: 0 auto;
 }
 
 .rating {
@@ -375,24 +390,24 @@ form button {
 }
 
 .text {
+  margin-left: 5%;
   display: flex;
   justify-content: space-between;
 }
 
 .text1 {
   width: 30vw;
-  height: 20vh;
+  min-height: 20vh;
   padding: 10.663px 13.328px;
   border-radius: 15.994px;
-  border: 0.536px solid #BEB6BF;
-  background: #F0ECF0;
+  border: 0.536px solid #5B495F;
   box-shadow: 1.42857px 3.57143px 7.14286px;
   margin: 10px;
-  background-color: #5B495F;
+  background-color: #f1e5e5;
 }
 
 .p1 {
-  color: #FFF;
+  color: var(--unnamed, #4E2956);
   text-align: center;
   font-family: Roboto;
   font-size: 17px;
@@ -404,7 +419,7 @@ form button {
 }
 
 .p2 {
-  color: #FFF;
+  color: var(--unnamed, #4E2956);
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
