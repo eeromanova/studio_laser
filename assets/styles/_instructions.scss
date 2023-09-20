@@ -5,70 +5,71 @@
   justify-content: space-around;
 }
 .h2 {
-text-align: start;
-color: $colortextdark;
-font-family: $fontmain;
-font-size: 55px;
-font-style: normal;
-font-weight: 500;
-line-height: 130%; 
-letter-spacing: 2.75px;
+  @include h2($colortextdark);
+  text-align: start;
+  margin-bottom: 5%;
 }
-.h3 {
+.instruction-h3 {
+  @include h3($colortextdark);
   flex-basis: 100%;
-  color: $colortextdark;
-  font-size: 20px;
-  font-family: $fontmain;
-  font-style: normal;
-  font-weight: 200;
-  line-height: 140%;
-  letter-spacing: 0.5px;
+  margin-bottom: 5%;
+  text-align: center;
 }
-.before-instruction{
+.instructions__before {
   justify-self: flex-start;
-  flex-basis: 35%;
-
+  flex-basis: 45%;
 }
-.after-instruction{
-  flex-basis: 35%;
+.instructions__after {
+  flex-basis: 45%;
 }
-.before-instruction__list-item {
-  ul {padding-left: 0;
-    li{
+.instructions__before-list-item {
+  font-family: $fontmain;
+  font-size: 15px;
+  color: $colortextdark;
+  .instructions__before-list_nested {
+    padding-left: 0;
+    .instructions__before-list-item_nested {
       list-style-type: none;
-    }}
+    }
+  }
 }
-.after-instruction__list-item {
-  ul {padding-left: 0;
-    li{
+.instructions__after-list {
+  font-family: $fontmain;
+  font-size: 15px;
+  color: $colortextdark;
+  .instructions__after-list_nested {
+    padding-left: 0;
+    .instructions__after-list-item_nested {
       list-style-type: none;
-    }}
+    }
+  }
 }
 
-
-
-form{
+.form {
   flex-wrap: wrap;
   display: flex;
   margin: 60px 0 auto 0;
   flex-basis: 100%;
   gap: 5%;
   justify-content: center;
-  .form-header {
+  .form__header {
     flex-basis: 100%;
-        font-size: 25px;
+    font-size: 25px;
+    font-family: $fontmain;
     text-align: center;
     color: $colortextpale;
   }
-  input{  height: 75px;
-  margin-right: 82px;
-  background-color: #F1E5E5;
-border: 1px solid $colortextdark;
-border-radius: 15px;
-padding:20px
-}
-  button {
+  .form__input-name,
+  .form__input-phone {
+    height: 75px;
+    // margin-right: 82px;
+    font-family: $fontmain;
+    background-color: $bgcolorlight;
+    border: 1px solid $bgcolorlight;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  .form__button {
     @include btn(164px, 75px, $bgcolordark, $colortextlight);
   }
-
 }

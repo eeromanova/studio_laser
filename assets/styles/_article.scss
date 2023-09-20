@@ -1,0 +1,26 @@
+
+.main_article {
+    width: 1440px;}
+  
+  .wrapper_article {
+  width: 80vw;
+  margin: 5vw;}
+  
+  
+  .h2_article {
+    @include h2($colortextdark);
+  }
+
+    .img__article {
+        float: left;
+        margin: 20px;
+        width: 40vw;
+        height: 70vh;
+      }
+     .p__article {
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+  
+      }
+    

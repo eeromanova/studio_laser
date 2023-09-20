@@ -5,10 +5,15 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 0.5fr 3fr;
   .h2 {
+    @include h2($colortextdark);
     grid-column: 1/3;
+    text-align: center;
+    margin-bottom: 5%;
   }
-  p {
-    font-size: 25px;
+
+  .contacts__text {
+    font-family: $fontmain;
+    font-size: 20px;
     color: $colortextdark;
     span {
       font-weight: 800;
@@ -16,7 +21,7 @@
   }
   .contacts__socials {
     img {
-      margin-right: 69px;
+      margin-right: 4%;
       width: 47.871px;
       height: 45px;
       flex-shrink: 0;
