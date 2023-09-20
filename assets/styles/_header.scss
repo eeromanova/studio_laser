@@ -8,7 +8,7 @@
     
   // }
   @media screen and (max-width: 767px) {
-    height: 1000px;
+    height: 950px;
     
   }
 }
@@ -22,6 +22,10 @@
   .header__logo {
     width: 180px;
     height: 80px;
+    @media screen and (max-width: 414px){
+      width: 80px;
+      height: 40px;
+    }
   }
 }
 .header__menu {
@@ -67,15 +71,43 @@
   width: 31.507px;
   height: 30.75px;
   margin-right: 5px;
+  @media screen and (max-width: 920px){
+    width: 25px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  }
+}
+.header__socials_tel:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
 }
 .header__socials_tg {
   width: 36.758px;
   height: 36px;
   margin-right: 5px;
+  @media screen and (max-width: 920px){
+    width: 25px;
+  margin-bottom: 1%;
+  }
+}
+.header__socials_tg:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
 }
 .header__socials_wa {
   width: 36.758px;
   height: 33.75px;
+  @media screen and (max-width: 920px){
+    width: 25px;
+  margin-bottom: 1%;
+  }
+}
+.header__socials_wa:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
 }
 .header__socials {
   @media screen and (max-width: 920px) {
@@ -116,7 +148,7 @@
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 2px;
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 768px) {
     font-size: 35px;
     
   }
@@ -125,7 +157,7 @@
   @include h3 ($colortextdark);
   line-height: 140%;
   letter-spacing: 0.5px;
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 768px) {
     font-size: 17px;
 }
 }
@@ -137,7 +169,10 @@
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 768px) {
     font-size: 15px;
+}
+@media screen and (max-width: 414px) {
+  font-size: 13px;
 }
 }
