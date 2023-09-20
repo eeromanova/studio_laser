@@ -200,6 +200,37 @@
   font-weight: 300;
 }
 
+.price {
+  margin: 0;
+  display: flex;
+  font-family: "Comfortaa", italic;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.table_col {
+  font-size: 14px;
+  width: 70vw;
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 5px;
+  background: #f1e5e5;
+  border-radius: 20px;
+  color: #3E4347;
+}
+
+.table_col th {
+  font-weight: bold;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(78, 41, 86, 0.7);
+  padding: 12px 10px;
+}
+
+.table_col td {
+  padding: 12px 10px;
+}
+
 .instructions {
   margin: 5% 10%;
   display: flex;
