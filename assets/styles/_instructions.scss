@@ -4,13 +4,14 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.h2 {
+.inctruction-h2 {
   @include h2($colortextdark);
   text-align: start;
 }
 .instruction-h3 {
   @include h3($colortextdark);
   flex-basis: 100%;
+  text-align: center;
   margin-bottom: 5%;
 }
 .before-instruction {
@@ -65,7 +66,15 @@ form {
     border-radius: 15px;
     padding: 20px;
   }
-  button {
+  .ask-button {
     @include btn(164px, 75px, $bgcolordark, $colortextlight);
   }
+}
+.ask-button:hover{
+  color: $colortextdark;
+  background-color: $bgcolorlight;
+  border: 1px solid $colortextdark;
+}
+input:hover {
+  border: 1px solid $colortextdark;
 }
