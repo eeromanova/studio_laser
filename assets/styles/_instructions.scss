@@ -4,37 +4,46 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.h2 {
+.inctruction-h2 {
   @include h2($colortextdark);
-text-align: start;
+  text-align: start;
 }
-.h3 {
+.instruction-h3 {
+  @include h3($colortextdark);
   flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 5%;
 }
-.before-instruction{
+.before-instruction {
   justify-self: flex-start;
-  flex-basis: 35%;
-
+  flex-basis: 45%;
 }
-.after-instruction{
-  flex-basis: 35%;
+.after-instruction {
+  flex-basis: 45%;
 }
 .before-instruction__list-item {
+  font-family: $fontmain;
+  font-size: 15px;
+  color: $colortextdark;
   ul {padding-left: 0;
     li{
       list-style-type: none;
+
     }}
 }
 .after-instruction__list-item {
-  ul {padding-left: 0;
-    li{
+  font-family: $fontmain;
+  font-size: 15px;
+  color: $colortextdark;
+  ul {
+    padding-left: 0;
+    li {
       list-style-type: none;
-    }}
+    }
+  }
 }
 
-
-
-form{
+form {
   flex-wrap: wrap;
   display: flex;
   margin: 60px 0 auto 0;
@@ -43,19 +52,29 @@ form{
   justify-content: center;
   .form-header {
     flex-basis: 100%;
-        font-size: 25px;
+    font-size: 25px;
+    font-family: $fontmain;
     text-align: center;
     color: $colortextpale;
   }
-  input{  height: 75px;
-  margin-right: 82px;
-  background-color: #F1E5E5;
-border: 1px solid $colortextdark;
-border-radius: 15px;
-padding:20px
-}
-  button {
+  input {
+    height: 75px;
+    // margin-right: 82px;
+    font-family: $fontmain;
+    background-color: $bgcolorlight;
+    border: 1px solid $bgcolorlight;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  .ask-button {
     @include btn(164px, 75px, $bgcolordark, $colortextlight);
   }
-
+}
+.ask-button:hover{
+  color: $colortextdark;
+  background-color: $bgcolorlight;
+  border: 1px solid $colortextdark;
+}
+input:hover {
+  border: 1px solid $colortextdark;
 }
