@@ -4,9 +4,9 @@
   background-image: url(../images/header_1.png);
   background-size: cover;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 767px) {
   .header {
-    height: 950px;
+    height: 1000px;
   }
 }
 
@@ -91,6 +91,14 @@
   height: 33.75px;
 }
 
+@media screen and (max-width: 920px) {
+  .header__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+}
+
 .header__main {
   margin-top: 20vh;
   width: 65%;
@@ -114,6 +122,38 @@
   letter-spacing: 1.25px;
   margin-top: 10%;
 }
+@media screen and (max-width: 767px) {
+  .header__button {
+    width: 250px;
+    height: 60px;
+    background-color: #5B495F;
+    color: #FFF;
+    font-family: "Comfortaa", italic;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header__button {
+    width: 80vw;
+    height: 40px;
+    background-color: #5B495F;
+    color: #FFF;
+    font-family: "Comfortaa", italic;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    font-size: 15px;
+  }
+}
 
 .header__button:hover {
   color: var(--unnamed, #4E2956);
@@ -129,6 +169,11 @@
   line-height: 130%;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 920px) {
+  .h1 {
+    font-size: 35px;
+  }
+}
 
 .header-h3 {
   color: var(--unnamed, #4E2956);
@@ -137,6 +182,11 @@
   font-style: normal;
   line-height: 140%;
   letter-spacing: 0.5px;
+}
+@media screen and (max-width: 920px) {
+  .header-h3 {
+    font-size: 17px;
+  }
 }
 
 .header__main_text {
@@ -147,6 +197,11 @@
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
+}
+@media screen and (max-width: 920px) {
+  .header__main_text {
+    font-size: 15px;
+  }
 }
 
 .section-about {
