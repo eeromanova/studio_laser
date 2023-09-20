@@ -24,6 +24,9 @@
   display: flex;
   flex-direction: row;
   margin-left: 10%;
+  @media screen and (max-width: 920px){
+    display: none;
+  }
 }
 .header__menu_item {
   margin-left: 2vw;
@@ -34,12 +37,27 @@
   font-style: normal;
   font-weight: 500;
 }
+.header__menu_item:hover {
+  color: $colortextlight;
+  background-color: $bgcolordark;
+}
 .dropdown-menu {
   background: transparent;
   border: none;
 }
 .dropdown-item {
   font-size: 8px;
+}
+.burger-menu {
+  display: none;
+  @media screen and (max-width: 920px) {
+    display: block;
+    fill: $bgcolordark;
+  }
+}
+.burger-menu:hover {
+  background-color: $bgcolorlight;
+  fill: $bgcolorlight;
 }
 .header__socials_tel {
   width: 31.507px;
@@ -66,6 +84,11 @@
 .header__button {
   @include btn(339px, 75px, $bgcolordark, $colortextlight);
   margin-top: 10%;
+}
+.header__button:hover {
+  color:$colortextdark;
+  background-color: $bgcolorlight;
+  border: 1px solid $colortextdark;
 }
 .h1 {
   font-size: 50px;
