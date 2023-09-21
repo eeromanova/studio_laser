@@ -67,4 +67,14 @@
       -ms-transform: scale(1.2);
       transform: scale(1.2);
     }
+    @media screen and (max-width:768px){
+      .text{
+        display: flex;
+        flex-direction: column;
+      }
+      .text1{
+        width: 60vw;
+        margin: 3% auto;
+      }
+    }
 

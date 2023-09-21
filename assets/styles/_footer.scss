@@ -14,5 +14,11 @@
 .p4{
     color: $colortextlight;  
     font-family: $fontmain;
-    text-align: center;
+}
+@media screen and (max-width:768px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

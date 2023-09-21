@@ -1,14 +1,32 @@
-@import './vars';
-@import './templatescommon';
-@import './header';
-@import './about';
-@import './price';
-@import './instructions';
-@import './blog';
-@import './reviews';
-@import './address';
-@import './footer';
-@import './article';
+@import "./vars";
+@import "./templatescommon";
+@import "./header";
+@import "./about";
+@import "./price";
+@import "./instructions";
+@import "./blog";
+@import "./reviews";
+@import "./address";
+@import "./footer";
+@import "./article";
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+}
+@font-face {
+  src: url(../fonts/Comfortaa-Regular.ttf);
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  src: url(../fonts/Comfortaa-Bold.ttf);
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  src: url(../fonts/Comfortaa-Light.ttf);
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 400;
 }
