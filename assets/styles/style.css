@@ -479,6 +479,10 @@
   flex-shrink: 0;
 }
 
+.contacts__map {
+  border: 0;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
