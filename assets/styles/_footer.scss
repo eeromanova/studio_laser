@@ -18,6 +18,8 @@
 }
 @media screen and (max-width:768px){
     .footer{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
