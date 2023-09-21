@@ -69,10 +69,12 @@
     }
     @media screen and (max-width:768px){
       .text{
-        display: block;
+        display: flex;
+        flex-direction: column;
       }
       .text1{
-        width: 50vw;
+        width: 60vw;
+        margin: 3% auto;
       }
     }
 
