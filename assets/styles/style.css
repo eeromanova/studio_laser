@@ -650,7 +650,6 @@ input:hover {
 .p4 {
   color: #FFF;
   font-family: "Comfortaa", italic;
-  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -691,4 +690,23 @@ input:hover {
 
 body {
   overflow-x: hidden;
+}
+
+@font-face {
+  src: url(../fonts/Comfortaa-Regular.ttf);
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  src: url(../fonts/Comfortaa-Bold.ttf);
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  src: url(../fonts/Comfortaa-Light.ttf);
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
