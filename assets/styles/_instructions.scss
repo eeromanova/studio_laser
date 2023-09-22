@@ -7,74 +7,91 @@
 .inctruction-h2 {
   @include h2($colortextdark);
   text-align: start;
+  margin-bottom: 5%;
+  @media screen and (max-width: 850px) {
+    text-align: center;
+  }
 }
 .instruction-h3 {
   @include h3($colortextdark);
   flex-basis: 100%;
   text-align: center;
   margin-bottom: 5%;
+  text-align: center;
 }
-.before-instruction {
+.instructions__before {
   justify-self: flex-start;
   flex-basis: 45%;
+  @media screen and (max-width: 850px) {
+    flex-basis: 100%;
+  }
 }
-.after-instruction {
+.instructions__after {
   flex-basis: 45%;
+  @media screen and (max-width: 850px) {
+    flex-basis: 100%;
+  }
 }
-.before-instruction__list-item {
+.instructions__before-list-item {
   font-family: $fontmain;
   font-size: 15px;
   color: $colortextdark;
-  ul {padding-left: 0;
-    li{
-      list-style-type: none;
-
-    }}
-}
-.after-instruction__list-item {
-  font-family: $fontmain;
-  font-size: 15px;
-  color: $colortextdark;
-  ul {
+  .instructions__before-list_nested {
     padding-left: 0;
-    li {
+    .instructions__before-list-item_nested {
+      list-style-type: none;
+    }
+  }
+}
+.instructions__after-list {
+  font-family: $fontmain;
+  font-size: 15px;
+  color: $colortextdark;
+  .instructions__after-list_nested {
+    padding-left: 0;
+    .instructions__after-list-item_nested {
       list-style-type: none;
     }
   }
 }
 
-form {
+.form {
   flex-wrap: wrap;
   display: flex;
   margin: 60px 0 auto 0;
   flex-basis: 100%;
   gap: 5%;
   justify-content: center;
-  .form-header {
+  @media screen and (max-width: 910px) {
+    gap: 2%;
+    justify-content: start;
+  }
+
+  .form__header {
     flex-basis: 100%;
     font-size: 25px;
     font-family: $fontmain;
     text-align: center;
     color: $colortextpale;
   }
-  input {
+  .form__input {
     height: 75px;
-    // margin-right: 82px;
     font-family: $fontmain;
     background-color: $bgcolorlight;
     border: 1px solid $bgcolorlight;
     border-radius: 15px;
     padding: 20px;
+    margin-bottom: 1%;
   }
-  .ask-button {
+  .form__button {
     @include btn(164px, 75px, $bgcolordark, $colortextlight);
   }
 }
-.ask-button:hover{
+.form__button:hover {
   color: $colortextdark;
   background-color: $bgcolorlight;
   border: 1px solid $colortextdark;
 }
-input:hover {
+.form__input:hover {
   border: 1px solid $colortextdark;
 }
