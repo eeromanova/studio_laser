@@ -2,17 +2,18 @@
   width: 100vw;
   height: 860px;
   background-image: url(../images/header_1.png);
-  //   background-color: linear-gradient(
-  //     180deg,
-  //     #dfe4eb 0%,
-  //     rgba(223, 228, 235, 0.8) 100%
-  //   );
   background-size: cover;
-  //   opacity: 70%;
+  // @media screen and (max-width: 920px) {
+  //   height: 800px;
+    
+  // }
+  @media screen and (max-width: 767px) {
+    height: 950px;
+    
+  }
 }
-.header__container {
+.header-container {
   margin: auto 10vw;
-  background-color: transparent;
 }
 .header__nav {
   display: flex;
@@ -21,12 +22,19 @@
   .header__logo {
     width: 180px;
     height: 80px;
+    @media screen and (max-width: 414px){
+      width: 80px;
+      height: 40px;
+    }
   }
 }
 .header__menu {
   display: flex;
   flex-direction: row;
   margin-left: 10%;
+  @media screen and (max-width: 920px){
+    display: none;
+  }
 }
 .header__menu_item {
   margin-left: 2vw;
@@ -37,6 +45,10 @@
   font-style: normal;
   font-weight: 500;
 }
+.header__menu_item:hover {
+  color: $colortextlight;
+  background-color: $bgcolordark;
+}
 .dropdown-menu {
   background: transparent;
   border: none;
@@ -44,19 +56,65 @@
 .dropdown-item {
   font-size: 8px;
 }
+.burger-menu {
+  display: none;
+  @media screen and (max-width: 920px) {
+    display: block;
+    fill: $bgcolordark;
+  }
+}
+.burger-menu:hover {
+  background-color: $bgcolorlight;
+  fill: $bgcolorlight;
+}
 .header__socials_tel {
   width: 31.507px;
   height: 30.75px;
   margin-right: 5px;
+  @media screen and (max-width: 920px){
+    width: 25px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  }
+}
+.header__socials_tel:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
 }
 .header__socials_tg {
   width: 36.758px;
   height: 36px;
   margin-right: 5px;
+  @media screen and (max-width: 920px){
+    width: 25px;
+  margin-bottom: 1%;
+  }
+}
+.header__socials_tg:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
 }
 .header__socials_wa {
   width: 36.758px;
   height: 33.75px;
+  @media screen and (max-width: 920px){
+    width: 25px;
+  margin-bottom: 1%;
+  }
+}
+.header__socials_wa:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+}
+.header__socials {
+  @media screen and (max-width: 920px) {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
 }
 .header__main {
   margin-top: 20vh;
@@ -69,6 +127,19 @@
 .header__button {
   @include btn(339px, 75px, $bgcolordark, $colortextlight);
   margin-top: 10%;
+  @media screen and (max-width: 767px) {
+    @include btn(250px, 60px, $bgcolordark, $colortextlight);
+    font-size: 15px;
+  }
+  @media screen and (max-width: 414px) {
+    @include btn(80vw, 40px, $bgcolordark, $colortextlight);
+    font-size: 15px;
+  }
+}
+.header__button:hover {
+  color:$colortextdark;
+  background-color: $bgcolorlight;
+  border: 1px solid $colortextdark;
 }
 .h1 {
   font-size: 50px;
@@ -77,20 +148,31 @@
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 2px;
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+    
+  }
 }
-.h3 {
-  font-size: 20px;
-  font-family: $fontmain;
-  font-style: normal;
-  font-weight: 200;
+.header-h3 {
+  @include h3 ($colortextdark);
   line-height: 140%;
   letter-spacing: 0.5px;
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+}
 }
 .header__main_text {
   margin-top: 5vh;
+  width: 100%;
   font-size: 17px;
   font-family: $fontmain;
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+}
+@media screen and (max-width: 414px) {
+  font-size: 13px;
+}
 }

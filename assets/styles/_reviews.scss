@@ -1,71 +1,80 @@
-.reviews {
-  width: 100vw;
+.reviews{
+  width: 97vw;
+  margin-bottom: 15px;
 }
-.h2 {
-  color: #4e2956;
-  font-family: Noto Serif;
-  font-size: 55px;
-  font-style: normal;
+.reviews-h2{
+  @include h2 ($colortextdark);
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 2.75px;
   text-align: center;
-}
-.stars {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.rating {
-  color: #4e2956;
+  }
+  .stars{
   text-align: center;
-  font-family: Roboto;
+  width: 20vw;
+  display: block;
+  margin: 0 auto;
+  }
+  .rating{
+  color: $colortextdark;
+  text-align: center;
+  font-family: $fontmain;
   font-size: 25px;
-  font-style: italic;
   font-weight: 300;
-  line-height: 140%;
+  line-height: 140%; 
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin: 10px;
-}
-.text {
-  display: flex;
-  justify-content: space-between;
-}
-.text1 {
+  }
+  .text{
+    margin-left: 5%;  
+    display: flex;
+      justify-content: space-between;
+  }
+  .text1{
   width: 30vw;
-  height: 20vh;
+  min-height: 20vh;
   padding: 10.663px 13.328px;
   border-radius: 15.994px;
-  border: 0.536px solid #beb6bf;
-  background: #f0ecf0;
-  box-shadow: 1.42857px 3.57143px 7.14286px;
+  border: 0.536px solid $bgcolordark;
+  box-shadow: 1.42857px 3.57143px 7.14286px; 
   margin: 10px;
-}
-.p1 {
-  color: #000;
+  background-color: $bgcolorlight;
+  }
+  .p1{
+  color: $colortextdark;
   text-align: center;
-  font-family: Noto Serif;
+  font-family: $fontreviews;
   font-size: 17px;
   font-style: normal;
   font-weight: 800;
-  line-height: 140%;
+  line-height: 140%; 
   letter-spacing: 0.34px;
   text-decoration-line: underline;
-}
-.p2 {
-  color: #000;
+  }
+  .p2{
+  color: $colortextdark;
   text-align: center;
-  font-family: Roboto;
+  font-family: $fontreviews;
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 140%; 
   letter-spacing: 0.32px;
-}
-.text1:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
+  }
+  .text1:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    @media screen and (max-width:768px){
+      .text{
+        display: flex;
+        flex-direction: column;
+      }
+      .text1{
+        width: 60vw;
+        margin: 3% auto;
+      }
+    }
+

@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $bgcolordark;
+    width: 97vw;
+    margin: 15px;
+    border-radius: 15.994px;
+}
+.p3{
+    color: $colortextlight;
+    font-family: $fontmain;
+}
+.p4{
+    color: $colortextlight;  
+    font-family: $fontmain;
+}
+@media screen and (max-width:768px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
