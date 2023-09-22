@@ -1,32 +1,44 @@
-.h2__blog {
-    @include h2($colortextdark);
+.blog {
+    margin: 5% 10%;
+    background-image: url(../images/blog_cover.png);
+    background-size: cover;
 }
 
-.blog_wrapper {
-    width: 100%;
-    background-image: url(/assets/images/img_blog/backgrimg.png);
-    display: flex;
+.blog-wrapper {
+   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex-wrap: wrap;
+    width: 80vw;}
+   
+    .blog__h2 {
+    @include h2 ($colortextgreendark);  
+    text-align: center;
 }
+
 .card-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: $colortextgreenlight;
-    width: 30vw;
-    height: 70vh;
-    margin: 10px;
+    align-items: center;
+    background: $colortextgreenlight;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 30%;
+    border-radius: 5%;
+    border: 1px solid $colortextgreendark;}
+    
+.card-wrapper__img {
+    width: 70%;
+    height: 30vh;
+    margin-top: 30px;
+    border-radius: 5%;
+    object-fit: cover;
 }
-.card__img {
-    height: 70vh;
-    width: 80vw;}
-
-.card__link {
-   padding-left: 10px;
-   padding-top: 10px;
+.card-wrapper__link {
+    height: 40%;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
     text-decoration: none;
     text-align: center;
     color: $colortextlight;
