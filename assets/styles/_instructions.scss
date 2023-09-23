@@ -3,11 +3,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media screen and (min-width: 2500px) {
+    margin: 5% 25%;
+  }
 }
 .inctruction-h2 {
   @include h2($colortextdark);
   text-align: start;
   margin-bottom: 5%;
+
   @media screen and (max-width: 850px) and (min-width: 281px) {
     text-align: center;
   }
