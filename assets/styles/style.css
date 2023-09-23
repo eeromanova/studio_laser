@@ -328,6 +328,16 @@
   font-weight: 400;
 }
 
+.advantages-h3_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.advantages-h3_link:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
 .price {
   margin: 5% 10%;
   background-image: url(../images/priceback1.png);
@@ -775,7 +785,7 @@ input:hover {
 }
 .laser_employees {
   max-width: 100%;
-  padding: 3rem;
+  margin: 3rem;
   background-size: cover;
   flex-shrink: 0;
   border-radius: 50px;
@@ -811,6 +821,7 @@ input:hover {
 .licence_photo {
   width: 90%;
   margin-top: 15vh;
+  border-radius: 50px;
 }
 
 .h3_ourstudio {
@@ -842,6 +853,10 @@ input:hover {
     width: 50rem;
   }
 }
+.p_ourstudio {
+  padding: 5rem;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -1173,6 +1188,16 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+}
+
+.advantages-h3_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.advantages-h3_link:hover {
+  text-decoration: underline;
+  color: inherit;
 }
 
 .price {
