@@ -2,8 +2,8 @@
   max-width: 1440px;
   min-width: 320px;
 }
-.header {
-  width: 100%;
+.header_article {
+  margin: auto 10%;
   height: 30%;
   background-size: cover;
   @media screen and (max-width: 920px) {
@@ -13,8 +13,7 @@
 }
  
 .wrapper_article {
-  width: 80%;
-  margin: 5%;}
+  margin: 5% 10%;}
   
   
   .h1_article {
@@ -27,6 +26,7 @@
         margin: 20px;
         width: 40%;
         height: 60%;
+        object-fit: cover;
       }
 
     .article__img1 {
@@ -34,21 +34,28 @@
         margin: 0;
         width: 40%;
         height: 60%;
+        object-fit: cover;
       }
       .article__img3 {
         float: right;
         margin: 10px;
         width: 40%;
         height: 30%;
+        object-fit: cover;
       }
 
       .article__p {
       margin-top: 10px;
       margin-left: 20px;
-      margin-right: 20px; }
+      margin-right: 20px;
+      font-family: $fontmain;
+    }
 
-      .article__p .article__ul {
-        font-family: $fontreviews;
+      .article__p {
+        font-family: $fontmain;
+      }
+      .article__ul {
+        font-family: $fontmain;
       }
 
       .footer_article {

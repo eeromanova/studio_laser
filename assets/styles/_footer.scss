@@ -7,13 +7,20 @@
     margin: 15px;
     border-radius: 15.994px;
 }
+.footer-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .p3{
     color: $colortextlight;
     font-family: $fontmain;
+    margin-bottom: 0;
 }
 .p4{
     color: $colortextlight;  
     font-family: $fontmain;
+    margin-bottom: 0;
 }
 @media screen and (max-width:768px){
     .footer{
