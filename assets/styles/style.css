@@ -774,6 +774,7 @@ input:hover {
   }
 }
 .laser_employees {
+  max-width: 100%;
   padding: 3rem;
   background-size: cover;
   flex-shrink: 0;
@@ -794,6 +795,14 @@ input:hover {
   padding-bottom: 5rem;
 }
 
+.img_employees {
+  max-width: 100%;
+}
+
+.img_equipment {
+  max-width: 100%;
+}
+
 .license {
   display: flex;
   justify-content: center;
@@ -804,11 +813,23 @@ input:hover {
   margin-top: 15vh;
 }
 
-.h3 {
+.h3_ourstudio {
+  color: var(--unnamed, #4E2956);
+  text-align: center;
+  /* Заголовок 2 */
+  font-family: Noto Serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  /* 45.5px */
+  letter-spacing: 1.75px;
+  text-transform: capitalize;
   margin-top: 3rem;
 }
 
 .laser_employees_licence_element_line {
+  max-width: 100%;
   margin-bottom: 3rem;
 }
 
@@ -816,6 +837,11 @@ input:hover {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 900px) {
+  .laser_employees {
+    width: 50rem;
+  }
+}
 body {
   overflow-x: hidden;
 }
