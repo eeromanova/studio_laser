@@ -1,28 +1,7 @@
-.section-about {
-  margin-top: 12%;
-
-  // @media (max-width: 768px) {
-  //   margin-top: 20%;
-  //   margin-left: 15%;
-  // }
-  // @media (min-width: 769px) and (max-width: 1200px) {
-  //   margin-top: 10%;
-  //   margin-left: 10%;
-  // }
-  // // @media (min-width: 1201px) {
-  // //     margin-top: 12%;
-  // //     margin-left: 40%;
-  // // }
-
-  // @media screen and (min-width: 250px) and (max-width: 450px) {
-  //   margin-top: 60%;
-  //   margin-left: 10%;
-  // }
-}
-
 .about-h2 {
   @include h2($colortextdark);
   text-align: center;
+  margin-top: 12%;
 }
   .video-container {
   position: relative;
@@ -67,14 +46,16 @@
       display: inline-block;
       padding-top: 7%;
       margin: 0;
-      .img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-      }
     }
   }
+.about-icons {
+  width: 50%;
+}
+.about-icons:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
   .section-about__advantages_item {
     flex-basis: 25%;
     display: flex;
@@ -86,5 +67,5 @@
   }
   .advantages-h3 {
     @include h3($colortextgreenlight);
-    font-weight: 300;
+    font-weight: 400;
   }

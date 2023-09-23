@@ -1,6 +1,5 @@
 .reviews{
-  width: 97vw;
-  margin-bottom: 15px;
+  margin: 5% 10%;
 }
 .reviews-h2{
   @include h2 ($colortextdark);
@@ -24,10 +23,8 @@
   line-height: 140%; 
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin: 10px;
   }
-  .text{
-    margin-left: 5%;  
+  .text{ 
     display: flex;
       justify-content: space-between;
   }

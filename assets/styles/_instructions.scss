@@ -55,43 +55,38 @@
   }
 }
 
-.form {
+form {
   flex-wrap: wrap;
   display: flex;
   margin: 60px 0 auto 0;
   flex-basis: 100%;
   gap: 5%;
   justify-content: center;
-  @media screen and (max-width: 910px) {
-    gap: 2%;
-    justify-content: start;
-  }
-
-  .form__header {
+  .form-header {
     flex-basis: 100%;
     font-size: 25px;
     font-family: $fontmain;
     text-align: center;
     color: $colortextpale;
   }
-  .form__input {
+  input {
     height: 75px;
+    // margin-right: 82px;
     font-family: $fontmain;
     background-color: $bgcolorlight;
     border: 1px solid $bgcolorlight;
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 1%;
   }
-  .form__button {
+  .ask-button {
     @include btn(164px, 75px, $bgcolordark, $colortextlight);
   }
 }
-.form__button:hover {
+.ask-button:hover{
   color: $colortextdark;
   background-color: $bgcolorlight;
   border: 1px solid $colortextdark;
 }
-.form__input:hover {
+input:hover {
   border: 1px solid $colortextdark;
 }
