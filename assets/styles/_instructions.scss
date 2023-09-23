@@ -8,8 +8,11 @@
   @include h2($colortextdark);
   text-align: start;
   margin-bottom: 5%;
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 850px) and (min-width: 281px) {
     text-align: center;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 38px;
   }
 }
 .instruction-h3 {
@@ -62,6 +65,12 @@ form {
   flex-basis: 100%;
   gap: 5%;
   justify-content: center;
+  @media screen and (max-width: 680px) and (min-width: 551px) {
+    justify-content: start;
+  }
+  @media screen and (max-width: 550px) {
+    justify-content: space-evenly;
+  }
   .form-header {
     flex-basis: 100%;
     font-size: 25px;
@@ -71,22 +80,26 @@ form {
   }
   input {
     height: 75px;
-    // margin-right: 82px;
     font-family: $fontmain;
     background-color: $bgcolorlight;
     border: 1px solid $bgcolorlight;
     border-radius: 15px;
     padding: 20px;
+    margin-bottom: 2%;
+  }
+  input:hover {
+    border: 1px solid $colortextdark;
+  }
+  input:focus {
+    border: 1px solid $colortextdark;
+    outline: 0;
   }
   .ask-button {
     @include btn(164px, 75px, $bgcolordark, $colortextlight);
   }
-}
-.ask-button:hover{
-  color: $colortextdark;
-  background-color: $bgcolorlight;
-  border: 1px solid $colortextdark;
-}
-input:hover {
-  border: 1px solid $colortextdark;
+  .ask-button:hover {
+    color: $colortextdark;
+    background-color: $bgcolorlight;
+    border: 1px solid $colortextdark;
+  }
 }
