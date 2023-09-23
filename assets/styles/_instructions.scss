@@ -3,12 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media screen and (min-width: 2600px) {
+    margin: 5% 25%;
+  }
 }
 .inctruction-h2 {
   @include h2($colortextdark);
   text-align: start;
   margin-bottom: 5%;
-  @media screen and (max-width: 850px) {
+
+  @media screen and (max-width: 850px) and (min-width: 281px) {
     text-align: center;
   }
 }
@@ -62,31 +66,51 @@ form {
   flex-basis: 100%;
   gap: 5%;
   justify-content: center;
+  @media screen and (max-width: 680px) and (min-width: 551px) {
+    justify-content: start;
+  }
+  @media screen and (max-width: 550px) {
+    justify-content: space-evenly;
+  }
   .form-header {
     flex-basis: 100%;
     font-size: 25px;
     font-family: $fontmain;
     text-align: center;
     color: $colortextpale;
+    @media screen and (max-width: 550px) {
+      font-size: 15px;
+    }
   }
   input {
     height: 75px;
-    // margin-right: 82px;
     font-family: $fontmain;
     background-color: $bgcolorlight;
     border: 1px solid $bgcolorlight;
     border-radius: 15px;
     padding: 20px;
+    margin-bottom: 2%;
+    @media screen and (max-width: 550px) {
+      height: 50px;
+    }
+  }
+  input:hover {
+    border: 1px solid $colortextdark;
+  }
+  input:focus {
+    border: 1px solid $colortextdark;
+    outline: 0;
   }
   .ask-button {
     @include btn(164px, 75px, $bgcolordark, $colortextlight);
+    @media screen and (max-width: 550px) {
+      width: 130px;
+      height: 50px;
+    }
   }
-}
-.ask-button:hover{
-  color: $colortextdark;
-  background-color: $bgcolorlight;
-  border: 1px solid $colortextdark;
-}
-input:hover {
-  border: 1px solid $colortextdark;
+  .ask-button:hover {
+    color: $colortextdark;
+    background-color: $bgcolorlight;
+    border: 1px solid $colortextdark;
+  }
 }

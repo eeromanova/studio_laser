@@ -4,12 +4,15 @@
   column-gap: 56px;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 0.5fr 3fr;
+  @media screen and (min-width: 2600px) {
+    margin: 5% 25%;
+  }
   @media screen and (max-width: 1030px) {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 2fr 2fr;
     row-gap: 2%;
   }
-  .address-h2 {
+  .contacts-h2 {
     @include h2($colortextdark);
     grid-column: 1/3;
     text-align: center;
@@ -27,6 +30,11 @@
     span {
       font-weight: 800;
     }
+    a {
+      font-family: $fontmain;
+      font-size: 20px;
+      color: $colortextdark;
+    }
   }
   .contacts__socials {
     .contacts__socials-header {
@@ -43,8 +51,26 @@
       height: 45px;
       flex-shrink: 0;
     }
+    .contacts__socials_tg:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    .contacts__socials_tel:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    .contacts__socials_wa:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
   }
   iframe {
+    @media screen and (min-width: 2600px) {
+      width: 100%;
+    }
     @media screen and (max-width: 650px) {
       width: 100%;
     }

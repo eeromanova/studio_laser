@@ -155,7 +155,7 @@
             alt="Обложка видео"
           />
           <button class="play-button" onclick="playVideo()">
-            <img src="assets/images/Vector4.png" alt="Кнопка воспроизведения" />
+            <img class="play-button_item" src="assets/images/Vector4.png" alt="Кнопка воспроизведения" />
           </button>
           <video id="video" controls style="display: none">
             <source src="assets/video/video.mp4" type="video/mp4" />
@@ -329,52 +329,6 @@
           </a>
         </div>
       </section>
-      <!-- <section class="price">
-        <h2 class="price-h2">Прайс</h2>
-        <table class="table_col">
-          <tr>
-            <th>Лицо</th>
-            <th>Руки</th>
-            <th>Грудь и живот</th>
-            <th>Ноги</th>
-            <th>Спина</th>
-            <th>Бикини</th>
-          </tr>
-          <tr>
-            <td>Верхняя губа / подбородок 800</td>
-            <td>Подмышечные впадины 1300</td>
-            <td>Грудь полностью 1800</td>
-            <td>Ноги полностью (стопа входит) 3600</td>
-            <td>Спина полностью 3450</td>
-            <td>Глубокое бикини 2500</td>
-          </tr>
-          <tr>
-            <td>Виски / лоб 800</td>
-            <td>Руки до логтя 2100</td>
-            <td>Ареолы 1150</td>
-            <td>Бедра полностью 2600</td>
-            <td>Спина до поясницы 2600</td>
-            <td>Классическое бикини 1500</td>
-          </tr>
-          <tr>
-            <td>Бакенбарды / щеки 800</td>
-            <td>Руки полностью (кисти входят) 2650</td>
-            <td>Живот полностью 1800</td>
-            <td>Голени с коленями 2400</td>
-            <td>Поясница 2000</td>
-            <td>Ягодицы 1900</td>
-          </tr>
-          <tr>
-            <td>Лицо полностью 2500</td>
-            <td>Кисть 900</td>
-            <td>Белая линия живота 900</td>
-            <td>Стопа 900</td>
-          </tr>
-          <tr>
-            <td>Задняя и передняя поверхность шеи 1600</td>
-          </tr>
-        </table>
-      </section> -->
       <section class="instructions">
         <h3 class="instruction-h3">Красота, комфорт, безопасность</h3>
         <section class="instructions__before">
@@ -388,12 +342,8 @@
             <li class="instructions__before-list-item">
               Ограничить посещения солярия и прямого воздействия солнечных
               лучей:
-              <ul
-                class="instructions__before-list instructions__before-list_nested"
-              >
-                <li
-                  class="instructions__before-list instructions__before-list-item_nested"
-                >
+              <ul class="instructions__before-list instructions__before-list_nested">
+                <li class="instructions__before-list-item instructions__before-list-item_nested">
                   — за две недели до и после процедуры.
                 </li>
               </ul>
@@ -401,17 +351,11 @@
             <li class="instructions__before-list-item">
               Длина волос в зоне обработки на момент проведения процедуры не
               более 1мм:
-              <ul
-                class="instructions__before-list instructions__before-list_nested"
-              >
-                <li
-                  class="instructions__before-list instructions__before-list-item_nested"
-                >
+              <ul class="instructions__before-list instructions__before-list_nested">
+                <li class="instructions__before-list-item instructions__before-list-item_nested">
                   — темный волос убрать накануне перед процедурой;
                 </li>
-                <li
-                  class="instructions__before-list instructions__before-list-item_nested"
-                >
+                <li class="instructions__before-list-item instructions__before-list-item_nested">
                   — светлый волос убрать за 1 день до.
                 </li>
               </ul>
@@ -429,52 +373,46 @@
             <li class="instructions__after-list-item">
               Первые 1-3 дня после процедуры использовать только лечебные
               успокаивающие крема и мази:
-              <ul
-                class="instructions__after-list instructions__after-list_nested"
-              >
-                <li
-                  class="instructions__after-list instructions__after-list-item_nested"
-                >
+              <ul class="instructions__after-list instructions__after-list_nested">
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
                   — "Хлоргексидин";
                 </li>
-                <li
-                  class="instructions__after-list instructions__after-list-item_nested"
-                >
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
                   — "Бепантен";
                 </li>
-                <li
-                  class="instructions__after-list instructions__after-list-item_nested"
-                >
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
                   — "Пантенол".
                 </li>
               </ul>
             </li>
             <li class="instructions__after-list-item">
               В течение 3 дней после процедур исключить:
-              <ul
-                class="instructions__after-list instructions__after-list_nested"
-              >
-                <li
-                  class="instructions__after-list instructions__after-list-item_nested"
-                >
+              <ul class="instructions__after-list instructions__after-list_nested">
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
                   — горячие ванны;
                 </li>
-                <li
-                  class="instructions__after-list instructions__after-list-item_nested"
-                >
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
                   — сауны;
                 </li>
-                <li
-                  class="instructions__after-list instructions__after-list-item_nested"
-                >
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
                   — бани.
                 </li>
               </ul>
             </li>
             <li class="instructions__after-list-item">
-              В промежутках между процедурами: -удалять волосы только при помощи
-              бритвы, крема-депилятора или триммером; -не пользоваться
-              пинцетами, электродепиляторами; -не применять биодепиляцию.
+              В промежутках между процедурами:
+              <ul class="instructions__after-list instructions__after-list_nested">
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
+                  — удалять волосы только при помощи бритвы, крема-депилятора или триммером;
+                </li>
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
+                  — не пользоваться
+                  пинцетами, электродепиляторами;
+                </li>
+                <li class="instructions__after-list-item instructions__after-list-item_nested">
+                  — не применять биодепиляцию.
+                </li>
+              </ul>
             </li>
             <li class="instructions__after-list-item">
               Исполльзовать spf крем не менее 30-50 УФ защиты
@@ -532,7 +470,7 @@
               Удаление волос навсегда. Народные методы</a
             >
           </div>
-          <div class="card-wrapper .card-wr1">
+          <div class="card-wrapper card-wr1">
             <img
               class="card-wrapper__img"
               src="assets/images/img_blog/blog_4.jpg"
@@ -545,7 +483,7 @@
               Эпиляция и депиляция: в чем разница?</a
             >
           </div>
-          <div class="card-wrapper .card-wr1">
+          <div class="card-wrapper card-wr1">
             <img
               class="card-wrapper__img"
               src="assets/images/img_blog/blog_5.jpg"
@@ -559,7 +497,7 @@
               электроэпиляции?</a
             >
           </div>
-          <div class="card-wrapper .card-wr1">
+          <div class="card-wrapper card-wr1">
             <img
               class="card-wrapper__img"
               src="assets/images/img_blog/blog_6.jpg"
@@ -589,7 +527,7 @@
                 ноги, эффект впечатляет! Буду продолжать делать новые зоны!
               </p>
             </div>
-            <div class="text1">
+            <div class="text1 text1_itemnone">
               <p class="p1">Татьяна Тарасова.</p>
               <p class="p2">
                 Очень приятная атмосфера в студии.Хожу более года на эпиляцию к
@@ -599,7 +537,7 @@
                 профессионалу.
               </p>
             </div>
-            <div class="text1">
+            <div class="text1 text1_itemnone">
               <p class="p1">Анастасия К.</p>
               <p class="p2">
                 Отличное место! Работают профессионалы, чистый и стерильный
@@ -613,14 +551,11 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="address-h2">Как нас найти?</h2>
+        <h2 class="contacts-h2">Как нас найти?</h2>
         <div class="contacts__map-container">
-          <iframe
+          <iframe class="contacts__map"
             src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=39.734812%2C47.230135&mode=poi&poi%5Bpoint%5D=39.734574%2C47.230266&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D208529317626&utm_source=mapframe&z=17.69"
-            width="560"
-            height="400"
-            style="position: relative"
-          ></iframe>
+            width="560" height="400" style="position: relative"></iframe>
         </div>
         <div class="contacts__list">
           <p class="contacts__text">
@@ -628,29 +563,18 @@
             этаж, к.2
           </p>
           <p class="contacts__text">
-            <span> Номер телефона:</span> +7 (961) 310-83-33
+            <span> Номер телефона:</span> <a href="#" target="_blank">+7 (961)
+              310-83-33</a>
           </p>
           <p class="contacts__text"><span> Время работы: </span>9:00 - 20:00</p>
           <div class="contacts__socials">
             <p class="contacts__socials-header"><span>Мы в соц.сетях:</span></p>
-            <a href="#" target="_blank"
-              ><img
-                class="contacts__socials contacts__socials_tg"
-                src="assets/svg/tg.svg"
-                alt="tg"
-            /></a>
-            <a href="#" target="_blank"
-              ><img
-                class="contacts__socials contacts__socials_tel"
-                src="assets/svg/inst.svg"
-                alt="inst"
-            /></a>
-            <a href="#" target="_blank"
-              ><img
-                class="contacts__socials contacts__socials_wa"
-                src="assets/svg/wa.svg"
-                alt="wa"
-            /></a>
+            <a href="#" target="_blank"><img class="contacts__socials contacts__socials_tg" src="assets/svg/tg.svg"
+                alt="tg" /></a>
+            <a href="#" target="_blank"><img class="contacts__socials contacts__socials_tel" src="assets/svg/inst.svg"
+                alt="inst" /></a>
+            <a href="#" target="_blank"><img class="contacts__socials contacts__socials_wa" src="assets/svg/wa.svg"
+                alt="wa" /></a>
           </div>
         </div>
       </section>
@@ -672,5 +596,10 @@
       type="module"
       src="assets/bootstrap/bootstrap.bundle.min.js"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+    type="module"
+    src="assets/bootstrap/bootstrap.min.js"
+  ></script>
   </body>
 </html>

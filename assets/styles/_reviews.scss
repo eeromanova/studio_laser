@@ -23,6 +23,9 @@
   line-height: 140%; 
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  @media screen and (max-width:414px) {
+    font-size: 15px;
+  }
   }
   .text{ 
     display: flex;
@@ -48,6 +51,9 @@
   line-height: 140%; 
   letter-spacing: 0.34px;
   text-decoration-line: underline;
+  @media screen and (max-width:414px) {
+    font-size: 15px;
+  }
   }
   .p2{
   color: $colortextdark;
@@ -58,6 +64,14 @@
   font-weight: 400;
   line-height: 140%; 
   letter-spacing: 0.32px;
+  @media screen and (max-width:414px) {
+    font-size: 12px;
+  }
+  }
+  .text1_itemnone {
+    @media screen and (max-width:414px) {
+      display: none;
+    }
   }
   .text1:hover {
       -webkit-transform: scale(1.2);
