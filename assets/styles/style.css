@@ -43,6 +43,7 @@
 
 .nav-dropdown_main {
   color: var(--unnamed, #4E2956);
+  font-family: "Comfortaa", italic;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -52,9 +53,23 @@
 
 .dropdown-child_item {
   color: var(--unnamed, #4E2956);
-  padding: 20px;
+  font-family: "Comfortaa", italic;
+  font-size: 10px;
+  padding: 2px;
   text-decoration: none;
   display: block;
+}
+
+.dropdown-child_item:hover {
+  color: #FFF;
+  background-color: #5B495F;
+  text-decoration: none;
+}
+
+.nav-dropdown_main:hover {
+  color: #FFF;
+  background-color: #5B495F;
+  text-decoration: none;
 }
 
 .nav-dropdown:hover .dropdown-child {
@@ -64,7 +79,7 @@
 .dropdown-child {
   display: none;
   position: absolute;
-  background-color: #f1e5e5;
+  background-color: transparent;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -1033,7 +1048,7 @@ form .ask-button:hover {
 }
 
 .wrapper_article {
-  margin: 5% 10%;
+  margin: 10% 10%;
 }
 
 .h1_article {
