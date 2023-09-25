@@ -14,103 +14,28 @@
       <div class="header-container">
         <div class="header__nav">
           <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
-          <ul class="header__menu navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle header__menu header__menu_item"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >О нас</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Студия</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Специалисты</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Оборудование</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Отзывы</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Контакты</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle header__menu header__menu_item"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Услуги</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Диоидная эпиляция лица</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Диоидная эпиляция ног</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Диоидная эпиляция тела</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item header__menu header__menu_item"
-                    href="#"
-                    >Диоидная эпиляции зоны бикини</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="header__menu header__menu_item nav-link"
-                aria-current="page"
-                href="#"
-                >Об эпиляции</a
-              >
-            </li>
-          </ul>
+          <nav class="header__menu">
+            <div class="nav-dropdown">
+              <button class="nav-dropdown_main">О нас</button>
+              <div class="dropdown-child">
+                <a class="dropdown-child_item" href="#">Студия</a>
+                <a class="dropdown-child_item" href="#">Специалисты</a>
+                <a class="dropdown-child_item" href="#">Оборудование</a>
+                <a class="dropdown-child_item" href="#">Отзывы</a>
+                <a class="dropdown-child_item" href="#">Контакты</a>
+              </div>
+            </div>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown_main">Услуги</button>
+              <div class="dropdown-child">
+                <a class="dropdown-child_item" href="#">Диоидная эпиляция лица</a>
+                <a class="dropdown-child_item" href="#">Диоидная эпиляция ног</a>
+                <a class="dropdown-child_item" href="#">Диоидная эпиляция тела</a>
+                <a class="dropdown-child_item" href="#">Диоидная эпиляции зоны бикини</a>
+              </div>
+            </div>
+            <a class="nav-dropdown_main" href="#">Об эпиляции</a>
+          </nav>
           <img class="burger-menu" src="assets/svg/menu.svg" alt="menu" />
           <div class="header__socials">
             <a href="#" target="_blank"
