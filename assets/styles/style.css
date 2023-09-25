@@ -30,41 +30,72 @@
   }
 }
 
-.header__menu {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10%;
-}
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 921px) {
   .header__menu {
     display: none;
   }
 }
 
-.header__menu_item {
-  margin-left: 2vw;
-  color: var(--unnamed, #4E2956);
-  text-decoration: none;
-  font-family: "Comfortaa", italic;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.header__menu_item:hover {
+.nav-dropdown_main {
+  color: var(--unnamed, #4E2956);
+  font-family: "Comfortaa", italic;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.dropdown-child_item {
+  color: var(--unnamed, #4E2956);
+  font-family: "Comfortaa", italic;
+  font-size: 10px;
+  padding: 2px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-child_item:hover {
   color: #FFF;
   background-color: #5B495F;
+  text-decoration: none;
 }
 
-.dropdown-menu {
-  background: transparent;
-  border: none;
+.nav-dropdown_main:hover {
+  color: #FFF;
+  background-color: #5B495F;
+  text-decoration: none;
 }
 
-.dropdown-item {
-  font-size: 8px;
+.nav-dropdown:hover .dropdown-child {
+  display: block;
 }
 
+.dropdown-child {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
+  .burger-menu {
+    display: block;
+    fill: #5B495F;
+  }
+}
 .burger-menu {
   display: none;
 }
@@ -1018,7 +1049,7 @@ form .ask-button:hover {
 }
 
 .wrapper_article {
-  margin: 5% 10%;
+  margin: 10% 10%;
 }
 
 .h1_article {
