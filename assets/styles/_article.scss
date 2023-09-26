@@ -161,3 +161,7 @@ form {
     @include btn (240px, 115px, $bgcolordark, $colortextlight);
   }
 }
+.h1_epil {
+  text-align: start;
+  margin-left: 20px;
+}
