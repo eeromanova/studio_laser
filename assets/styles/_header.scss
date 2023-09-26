@@ -79,24 +79,14 @@
 
 .burger-menu {
   display: none;
-}
-@media screen and (max-width: 920px) {
-  .burger-menu {
-    display: block;
-    fill: $bgcolordark;
-  }
-}
-.burger-menu {
-  display: none;
   @media screen and (max-width: 920px) {
     display: block;
-    fill: $bgcolordark;
   }
 }
-.burger-menu:hover {
-  background-color: $bgcolorlight;
-  fill: $bgcolorlight;
-}
+// .burger-menu:hover {
+//   background-color: $bgcolorlight;
+//   fill: $bgcolorlight;
+// }
 .header__socials_tel {
   width: 31.507px;
   height: 30.75px;
@@ -208,4 +198,75 @@
   @media screen and (max-width: 414px) {
     font-size: 13px;
   }
+}
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 5%;
+  right: 40%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color:$bgcolordark;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -5px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 5px;
+}
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  margin-right: 80%;
+  width: 20vw;
+  padding: 0;
+  list-style: none;
+  text-align: start;
+  background-color: transparent;
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  color: $colortextdark;
+  font-family: $fontmain;
+  font-size: 10px; 
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: $bgcolordark;
+  color: $colortextlight;
+  text-decoration: none;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
 }
