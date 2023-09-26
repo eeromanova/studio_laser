@@ -253,6 +253,7 @@
 .h1 {
   font-size: 50px;
   font-family: "Comfortaa", italic;
+  color: var(--unnamed, #4E2956);
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
@@ -1234,6 +1235,43 @@ form .ask-button:hover {
     display: none;
   }
 }
+.article-h2 {
+  color: var(--unnamed, #4E2956);
+  font-family: "Comfortaa", italic;
+  font-size: 45px;
+  font-style: normal;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .article-h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .article-h2 {
+    font-size: 25px;
+  }
+}
+
+form .ask-button_item {
+  width: 240px;
+  height: 115px;
+  background-color: #5B495F;
+  color: #FFF;
+  font-family: "Comfortaa", italic;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+}
+@media screen and (max-width: 414px) {
+  form .ask-button_item {
+    font-size: 10px;
+  }
+}
+
 body {
   overflow-x: hidden;
 }

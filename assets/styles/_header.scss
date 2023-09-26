@@ -86,25 +86,6 @@
     fill: $bgcolordark;
   }
 }
-// .header__menu_item {
-//   margin-left: 2vw;
-//   color: $colortextdark;
-//   text-decoration: none;
-//   font-family: $fontmain;
-//   font-size: 15px;
-//   font-style: normal;
-//   font-weight: 500;
-// }
-// .header__menu_item:hover {
-//   color: $colortextlight;
-//   background-color: $bgcolordark;
-// }
-// .dropdown-menu {
-//   border: none;
-// }
-// .dropdown-item {
-//   font-size: 8px;
-// }
 .burger-menu {
   display: none;
   @media screen and (max-width: 920px) {
@@ -196,6 +177,7 @@
 .h1 {
   font-size: 50px;
   font-family: $fontmain;
+  color: $colortextdark;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
