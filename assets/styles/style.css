@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   width: 100vw;
   min-height: 860px;
@@ -778,6 +779,14 @@ form .ask-button:hover {
   }
 }
 
+.card-wrapper__link:hover {
+  text-decoration: underline;
+}
+
+.card-wrapper__link:visited {
+  color: blue;
+}
+
 .card-wrapper:hover {
   transform: scale(1.2);
 }
@@ -1104,10 +1113,6 @@ form .ask-button:hover {
   font-family: "Comfortaa", italic;
 }
 
-.article__p {
-  font-family: "Comfortaa", italic;
-}
-
 .article__ul {
   font-family: "Comfortaa", italic;
 }
@@ -1124,6 +1129,111 @@ form .ask-button:hover {
   border-radius: 15.994px;
 }
 
+/*стили для всех статей*/
+.articles {
+  margin: 10% 10%;
+}
+
+.atricles__h1 {
+  color: var(--unnamed, #4E2956);
+  font-family: "Comfortaa", italic;
+  font-size: 45px;
+  font-style: normal;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .atricles__h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .atricles__h1 {
+    font-size: 25px;
+  }
+}
+
+.articles__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+  border: 1px solid var(--unnamed, #1B3C36);
+  border-radius: 5%;
+}
+
+.preview-wrapper__img {
+  width: 40%;
+  border-radius: 5%;
+  margin: 2%;
+}
+
+.preview-wrapper__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-info__p {
+  color: var(--unnamed, #4E2956);
+  text-decoration: underline;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-family: "Comfortaa", italic;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.preview-info__text {
+  font-family: "Comfortaa", italic;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.preview-info__btn {
+  text-decoration: none;
+  font-family: "Comfortaa", italic;
+  background-color: #89B1A9;
+  color: #FFF;
+  border-radius: 40px;
+  width: 30%;
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+  border: 1px solid var(--unnamed, #1B3C36);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+}
+@media screen and (max-width: 414px) {
+  .preview-info__btn {
+    font-size: 10px;
+  }
+}
+
+.preview-info__btn:visited {
+  color: blue;
+}
+
+.preview-info__btn:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 920px) {
+  .preview-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .preview-info__text {
+    display: none;
+  }
+}
 body {
   overflow-x: hidden;
 }
