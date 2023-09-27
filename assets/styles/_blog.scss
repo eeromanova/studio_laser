@@ -54,7 +54,7 @@
     text-align: center;
     color: $colortextlight;
     text-overflow: ellipsis;
-    font-family: $fontmain;;
+    font-family: $fontmain;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -62,7 +62,13 @@
         font-size: 13px;
     }
 }
+.card-wrapper__link:hover {
+    text-decoration:underline;
+}
 
+.card-wrapper__link:visited {
+    color: blue;
+ }
 .card-wrapper:hover {
     transform: scale(1.2);
   }

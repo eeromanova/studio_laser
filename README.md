@@ -30,6 +30,11 @@
 
 <a href="https://eeromanova.github.io/studio_laser/">Page</a>
 
+### Design
+
+<p>Design created by Ekaterina Lysina</p>
+<a href="https://www.figma.com/file/k9YKjt0mnnvyVU6HGjsj7o/%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%9B%D1%8B%D1%81%D0%B8%D0%BD%D0%B0%3A-%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE-%D0%A4%D0%B8%D0%B3%D0%BC%D0%B5?node-id=0%3A1&mode=dev">Figma</a>
+
 ### Collaboraters
 
 <a href="https://github.com/OlgaLosikova">OlgaLosikova</a>
