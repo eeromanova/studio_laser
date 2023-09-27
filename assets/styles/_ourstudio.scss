@@ -1,4 +1,4 @@
-.laser_employees {
+/* .laser_employees {
     max-width: 100%;
     margin: 3rem;
     background-size: cover;
@@ -6,74 +6,77 @@
     border-radius: 50px;
     background: rgba(137, 177, 169, 0.30);
 
-    /* для форм/темный */
+    /* для форм/темный 
     box-shadow: 2px 5px 10px 5px rgba(46, 75, 121, 0.20);
-}
+} */
 
-.laser_employees_license {
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 15vh;
-    padding-bottom: 5rem;
-
-}
-
-.img_employees {
-    max-width: 100%;
+.laser {
+    background-color: #d3d2d0;
+    margin: 2rem 0 2rem 2rem;
+    border-radius: 50px 0 0 50px;
+    background-size: cover;
 }
 
 .img_equipment {
-    max-width: 100%;
+
+    float: right;
+    margin: 20px;
+    object-fit: cover;
+    width: 30vw;
+    height: auto;
+
+}
+
+.laser_main_text {
+    padding-left: 10vw;
+    padding-bottom: 10vw;
+}
+
+.laser_header {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+
+
+.employees {
+    background-color: #d3d2d0;
+    margin: 2rem 2rem 2rem 0;
+    border-radius: 0 50px 50px 0;
+    background-size: cover;
+}
+
+.employees_header {
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+
+.employees_main {
+    width: 100%;
+}
+
+.img_employees {
+
+    float: left;
+    padding: 3vw 3vh;
+
+    width: 30%;
+    height: auto;
+}
+
+.employees_main_text {
+    padding: 5rem;
+
 }
 
 .license {
+    width: 100%;
     display: flex;
     justify-content: center;
 
 }
 
 .licence_photo {
-    width: 90%;
-    margin-top: 15vh;
-    border-radius: 50px;
-
-}
-
-.h3_ourstudio {
-    color: var(--unnamed, #4E2956);
-    text-align: center;
-
-    /* Заголовок 2 */
-    font-family: Noto Serif;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
-    /* 45.5px */
-    letter-spacing: 1.75px;
-    text-transform: capitalize;
-    margin-top: 3rem;
-}
-
-.laser_employees_licence_element_line {
-    max-width: 100%;
-    margin-bottom: 3rem;
-}
-
-.img_employees {
-    margin-top: 3rem;
-}
-
-@media screen and (max-width: 900px) {
-    .laser_employees {
-        width: 50rem;
-    }
-}
-
-.p_ourstudio {
-    padding: 5rem;
+    width: 80%;
 }
