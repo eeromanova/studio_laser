@@ -1,47 +1,48 @@
-/* .laser_employees {
-    max-width: 100%;
-    margin: 3rem;
-    background-size: cover;
-    flex-shrink: 0;
-    border-radius: 50px;
-    background: rgba(137, 177, 169, 0.30);
-
-    /* для форм/темный 
-    box-shadow: 2px 5px 10px 5px rgba(46, 75, 121, 0.20);
-} */
-
 .laser {
     background-color: #d3d2d0;
-    margin: 2rem 0 2rem 2rem;
+    margin: 2vw 0 2vw 4vw;
     border-radius: 50px 0 0 50px;
     background-size: cover;
 }
 
-.img_equipment {
+.laser_main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 3vw;
+    justify-content: space-around;
+}
 
-    float: right;
-    margin: 20px;
+.img_equipment {
+    padding: 3vw 3vh;
     object-fit: cover;
     width: 30vw;
     height: auto;
-
+    margin-right: 2vw;
 }
 
 .laser_main_text {
-    padding-left: 10vw;
-    padding-bottom: 10vw;
+    margin-left: 8vw;
+    margin-right: 2vw;
+    font-family: $fontmain;
+    font-size: 1.5vw;
+    color: $colortextdark;
 }
 
 .laser_header {
     width: 100%;
     text-align: center;
-    padding: 3rem 0 3rem 0;
+    padding: 5vw 0 0 0;
+    color: var(--unnamed, #4E2956);
+    font-family: "Comfortaa", italic;
+    font-size: 5vw;
+    font-style: normal;
 }
 
 
 .employees {
     background-color: #d3d2d0;
-    margin: 2rem 2rem 2rem 0;
+    margin: 2vw 2vw 2vw 0;
     border-radius: 0 50px 50px 0;
     background-size: cover;
 }
@@ -49,25 +50,35 @@
 .employees_header {
     width: 100%;
     text-align: center;
-    padding: 3rem 0 3rem 0;
+    padding: 5vw 0 0 0;
+    color: var(--unnamed, #4E2956);
+    font-family: "Comfortaa", italic;
+    font-size: 5vw;
+    font-style: normal;
 }
 
 .employees_main {
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3vw;
+    justify-content: space-around;
+
 }
 
 .img_employees {
-
-    float: left;
     padding: 3vw 3vh;
-
+    margin-left: 2vw;
     width: 30%;
     height: auto;
 }
 
 .employees_main_text {
-    padding: 5rem;
-
+    margin-right: 5vw;
+    margin-left: 2vw;
+    font-family: $fontmain;
+    font-size: 1.5vw;
+    color: $colortextdark;
 }
 
 .license {
@@ -80,3 +91,16 @@
 .licence_photo {
     width: 80%;
 }
+
+@media screen and (max-width: 640px) {
+    .laser_main {
+        align-items: flex-start
+    }
+
+    .laser_main_text {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {}
