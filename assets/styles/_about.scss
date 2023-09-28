@@ -48,21 +48,13 @@ video {
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 10%;
-
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
   .a {
     display: inline-block;
     padding-top: 7%;
     margin: 0;
-
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-    }
-
-    .a {
-      display: inline-block;
-      padding-top: 7%;
-      margin: 0;
-    }
   }
 }
 

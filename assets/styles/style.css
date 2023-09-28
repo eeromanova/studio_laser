@@ -437,17 +437,12 @@ video {
   margin-left: 10%;
   margin-right: 10%;
 }
-.section-about__advantages .a {
-  display: inline-block;
-  padding-top: 7%;
-  margin: 0;
-}
 @media screen and (max-width: 768px) {
-  .section-about__advantages .a {
+  .section-about__advantages {
     flex-direction: column;
   }
 }
-.section-about__advantages .a .a {
+.section-about__advantages .a {
   display: inline-block;
   padding-top: 7%;
   margin: 0;
