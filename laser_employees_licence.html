@@ -1,204 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
-        rel="stylesheet" />
-    <link rel="shortcut icon" href="assets/svg/favicon_2.svg" type="image/svg" />
-
-    <title>studiomysecret_laser_employees_licence</title>
-</head>
-
-<body>
-    <!-- блок хедера -->
-    <header class="header">
-        <div class="header-container">
-            <div class="header__nav">
-                <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
-                <ul class="header__menu navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle header__menu header__menu_item" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">О нас</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Студия</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Специалисты</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Оборудование</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Отзывы</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle header__menu header__menu_item" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Диоидная эпиляция
-                                    лица</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Диоидная эпиляция
-                                    ног</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Диоидная эпиляция
-                                    тела</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item header__menu header__menu_item" href="#">Диоидная эпиляции зоны
-                                    бикини</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="header__menu header__menu_item nav-link" aria-current="page" href="#">Об эпиляции</a>
-                    </li>
-                </ul>
-                <div class="header__socials">
-                    <a href="#" target="_blank"><img class="header__socials header__socials_tel"
-                            src="assets/svg/tel.svg" alt="tel" /></a>
-                    <a href="#" target="_blank"><img class="header__socials header__socials_tg" src="assets/svg/tg.svg"
-                            alt="tg" /></a>
-                    <a href="#" target="_blank"><img class="header__socials header__socials_wa" src="assets/svg/wa.svg"
-                            alt="wa" /></a>
-                </div>
+    <link rel="icon" href="assets/images/favi.png" type="image/png" />
+    <title>studiomysecret</title>
+  </head>
+  <body class="body_article">
+    <header class="header_article">
+      <div class="header__container">
+        <div class="header__nav">
+          <a href="index.html">
+            <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
+          </a>
+          <nav class="header__menu">
+            <div class="nav-dropdown">
+              <button class="nav-dropdown_main">О нас</button>
+              <div class="dropdown-child">
+                <a class="dropdown-child_item" href="index.html#about-link"
+                  >Студия</a
+                >
+                <a
+                  class="dropdown-child_item"
+                  href="laser_employees_licence.html"
+                  >Специалисты</a
+                >
+                <a
+                  class="dropdown-child_item"
+                  href="laser_employees_licence.html"
+                  >Оборудование</a
+                >
+                <a class="dropdown-child_item" href="index.html#reviews-link"
+                  >Отзывы</a
+                >
+                <a class="dropdown-child_item" href="index.html#contacts-link"
+                  >Контакты</a
+                >
+              </div>
             </div>
-            <div class="header__main">
-                <p class="header-h3">Лазерная эпиляция в Ростове-на-Дону</p>
-                <h1 class="h1">Студия "Мой секрет"</h1>
-                <p class="header__main header__main_text">
-                    Мы приглашаем вас в невероятное путешествие к идеальной коже, где
-                    современные технологии и опытные специалисты сливаются в единую
-                    гармонию. Добро пожаловать в мир совершенства!
-                </p>
-                <button class="header__button">Записаться сейчас</button>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown_main">Услуги</button>
+              <div class="dropdown-child">
+                <a class="dropdown-child_item" href="dioid_face.html"
+                  >Диоидная эпиляция лица</a
+                >
+                <a class="dropdown-child_item" href="dioid_leg.html"
+                  >Диоидная эпиляция ног</a
+                >
+                <a class="dropdown-child_item" href="dioid_body.html"
+                  >Диоидная эпиляция тела</a
+                >
+                <a class="dropdown-child_item" href="dioid_bikini.html"
+                  >Диоидная эпиляции зоны бикини</a
+                >
+              </div>
             </div>
+            <a class="nav-dropdown_main" href="articles_all.html"
+              >Об эпиляции</a
+            >
+          </nav>
+          <nav class="burger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li>
+                <a class="menu__item" href="laser_employees_licence.html"
+                  >О студии</a
+                >
+              </li>
+              <li>
+                <a class="menu__item" href="index.html#price-link">Цены</a>
+              </li>
+              <li>
+                <a class="menu__item" href="dioid_epil.html"
+                  >Диоидная эпиляция для женщин</a
+                >
+              </li>
+              <li><a class="menu__item" href="articles_all.html">Блог</a></li>
+              <li>
+                <a class="menu__item" href="index.html#reviews-link">Отзывы</a>
+              </li>
+              <li>
+                <a class="menu__item" href="index.html#contacts-link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header__socials">
+            <a href="#" target="_blank"
+              ><img
+                class="header__socials_tel"
+                src="assets/svg/tel.svg"
+                alt="tel"
+            /></a>
+            <a href="#" target="_blank"
+              ><img class="header__socials_tg" src="assets/svg/tg.svg" alt="tg"
+            /></a>
+            <a href="#" target="_blank"
+              ><img class="header__socials_wa" src="assets/svg/wa.svg" alt="wa"
+            /></a>
+          </div>
         </div>
-
-
+      </div>
     </header>
-    <!-- блок с основным-->
-    <div class="laser_employees_license">
-
-        <div class="employees">
-            <h3 class="employees_header">Наши Специалисты</h3>
-            <div class="employees_main">
-                <img class="img_employees" src="assets/images/employees_photo_cropped.jpg"
-                    alt="Фотография специалистов">
-                <div class="employees_main_text">
-                    <p>Кто встречает клиента в нашей студии?</p>
-                    <p>
-                        Конечно, наши специалисты по лазерной эпиляции: Людмила и Тамара.
-                        Девушки внимательно выслушают все пожелания клиента, учтут все замечания и индивидуально под
-                        каждого
-                        пришедшего на процедуру человека настоят аппаратуру.
-                    </p>
-                    <p>
-                        Процесс эпиляции пройдет с максимальным комфортом для каждого клиента. Девушки ответят на все
-                        вопросы, объяснят подробно сам процесс и небольшие ограничения связанные с процедурой.</p>
-                </div>
-            </div>
-        </div>
-
+    <main>
+      <section class="about">
+        <p class="header-h3 header-h3_about">Добро пожаловать в студию «Мой секрет»
+        </p>
+        <h1 class="h1 h1_about">О нас</h1>
+        <p class="employees_main_text">Первое, что бросается в глаза при входе
+          в салон или медицинский кабинет — это свежесть и чистота.
+          Согласитесь, у нее свой, особый, бодрящий и ни с чем не сравнимый запах.
+          Когда вдыхаешь воздух и не чувствуешь частичек пыли. Добиться этого сложно, но мы фанаты чистоты и всегда следим за стерильностью (не побоюсь этого слова) наших кабинетов и используемых инструментов. Мастера не доверяют эту процедуру никому и самостоятельно стерилизуют все инструменты и наводят порядок после смены. До начала работы все повторно будет протерто и продезинфицировано. При желании Вы можете стать Еленой Летучей и с белой перчаткой пройтись по кабинету в поисках пылинок. Точно скажу — не надейтесь что-то у нас найти. Это просто бесполезно.</p>
+      </section>
+      <section>
+          <div class="employees">
+              <h2 class="employees_header" id="employees">Наши Специалисты</h2>
+              <div class="employees_main">
+                  <img class="img_employees" src="assets/images/employees_photo_cropped.jpg"
+                      alt="Фотография специалистов">
+                  <div class="employees_main_text">
+                      <p>Кто встречает клиента в нашей студии?</p>
+                      <p>
+                          Конечно, наши специалисты по лазерной эпиляции: Людмила и Тамара.
+                          Девушки внимательно выслушают все пожелания клиента, учтут все замечания и индивидуально под
+                          каждого
+                          пришедшего на процедуру человека настоят аппаратуру.
+                      </p>
+                      <p>
+                          Процесс эпиляции пройдет с максимальным комфортом для каждого клиента. Девушки ответят на все
+                          вопросы, объяснят подробно сам процесс и небольшие ограничения связанные с процедурой.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section>
         <div class="laser">
-            <h3 class="laser_header" id="equipment">Наше Оборудование</h3>
+          <h2 class="laser_header" id="equipment">Наше Оборудование</h2>
 
-            <div class="laser_main">
+          <div class="laser_main">
 
-                <img class="img_equipment" src="assets/images/laser_photo.jpg" alt="Фотография с оборудованием"></img>
+              <img class="img_equipment" src="assets/images/laser_photo.jpg" alt="foto_equip"/>
 
-                <div class="laser_main_text">
-                    <p>У аппарата MagicOne имеется регистрационное удостоверение, которое
-                        зафиксировано
-                        Минздравом. Это
-                        удостоверение подтверждает безопасность аппарата для здоровья человека и говорит о том, что на
-                        нем
-                        можно проводить лазерную эпиляцию.
-                    </p>
-                    <p>
-                        У аппарата отсутствуют побочные эффекты и реабилитационный период, не стоит опасаться
-                        покраснения
-                        или высыпания. Их не будет. И тут есть только одно ограничение. Не стоит загорать за две недели
-                        до и
-                        через две недели после процедуры. Это поможет сохранить кожу гладкой, красивой и избежать
-                        пигментации. Тут уж стоит потерпеть. Наградой вам будет красивая и шелковистая кожа без
-                        надоевших
-                        волосков. Согласитесь, это того стоит. А процедур понадобится от 5 до 10. Но тут все уже
-                        индивидуально и зависит от особенностей организма.
-                    </p>
-                    <p>
-                        Процедуры на аппарате MagicOne совершенно безболезненны за счет контактного охлаждения на
-                        сапфировом
-                        стекле. Время самой процедуры сокращено до минимума, за счет высокой частоты работы лазера. Это
-                        оценят все, так как сегодня трудно выкроить не то что пару лишних часов на процедуру, но и 30
-                        минут
-                        не найти в графике современного человека. Да и просто жаль терять такое драгоценное время на
-                        долгое
-                        пребываение в салоне.
-                    </p>
-                </div>
+              <div class="laser_main_text">
+                  <p>У аппарата MagicOne имеется регистрационное удостоверение, которое
+                      зафиксировано
+                      Минздравом. Это
+                      удостоверение подтверждает безопасность аппарата для здоровья человека и говорит о том, что на
+                      нем
+                      можно проводить лазерную эпиляцию.
+                  </p>
+                  <p>
+                      У аппарата отсутствуют побочные эффекты и реабилитационный период, не стоит опасаться
+                      покраснения
+                      или высыпания. Их не будет. И тут есть только одно ограничение. Не стоит загорать за две недели
+                      до и
+                      через две недели после процедуры. Это поможет сохранить кожу гладкой, красивой и избежать
+                      пигментации. Тут уж стоит потерпеть. Наградой вам будет красивая и шелковистая кожа без
+                      надоевших
+                      волосков. Согласитесь, это того стоит. А процедур понадобится от 5 до 10. Но тут все уже
+                      индивидуально и зависит от особенностей организма.
+                  </p>
+                  <p>
+                      Процедуры на аппарате MagicOne совершенно безболезненны за счет контактного охлаждения на
+                      сапфировом
+                      стекле. Время самой процедуры сокращено до минимума, за счет высокой частоты работы лазера. Это
+                      оценят все, так как сегодня трудно выкроить не то что пару лишних часов на процедуру, но и 30
+                      минут
+                      не найти в графике современного человека. Да и просто жаль терять такое драгоценное время на
+                      долгое
+                      пребываение в салоне.
+                  </p>
+              </div>
 
-            </div>
+          </div>
         </div>
-    </div>
-
-    <div class="license">
-        <!--<h3>Лицензия</h3>-->
-        <img class="licence_photo" src="assets/images/license.jpg">
-    </div>
-
-    <!-- блок как нас найти -->
+      </section>
+      <section>
+        <div class="license" id="license">
+          <img class="licence_photo" src="assets/images/license.jpg" alt="license">
+      </div>
+      </section>
     <section class="contacts">
-        <h2 class="address-h2">Как нас найти?</h2>
-        <div class="contacts__map-container">
-            <iframe
-                src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=39.734812%2C47.230135&mode=poi&poi%5Bpoint%5D=39.734574%2C47.230266&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D208529317626&utm_source=mapframe&z=17.69"
-                width="560" height="400" style="position:relative;"></iframe>
+      <h2 class="contacts-h2" id="contacts-link">Как нас найти?</h2>
+      <div class="contacts__map-container">
+        <iframe class="contacts__map"
+          src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=39.734812%2C47.230135&mode=poi&poi%5Bpoint%5D=39.734574%2C47.230266&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D208529317626&utm_source=mapframe&z=17.69"
+          width="560" height="400" style="position: relative"></iframe>
+      </div>
+      <div class="contacts__list">
+        <p class="contacts__text">
+          <span> Адрес:</span> г. Ростов-на-Дону, пер. Крепостной, д. 99, 2-й
+          этаж, к.2
+        </p>
+        <p class="contacts__text">
+          <span> Номер телефона:</span>
+          <a href="#" target="_blank">+7 (961) 310-83-33</a>
+        </p>
+        <p class="contacts__text"><span> Время работы: </span>9:00 - 20:00</p>
+        <div class="contacts__socials">
+          <p class="contacts__socials-header"><span>Мы в соц.сетях:</span></p>
+          <a href="#" target="_blank"><img class="contacts__socials contacts__socials_tg" src="assets/svg/tg.svg"
+              alt="tg" /></a>
+          <a href="#" target="_blank"><img class="contacts__socials contacts__socials_tel" src="assets/svg/inst.svg"
+              alt="inst" /></a>
+          <a href="#" target="_blank"><img class="contacts__socials contacts__socials_wa" src="assets/svg/wa.svg"
+              alt="wa" /></a>
         </div>
-        <div class="contacts__list">
-            <p class="contacts__text">
-                <span> Адрес:</span> г. Ростов-на-Дону, пер. Крепостной,
-                д. 99, 2-й этаж, к.2
-            </p>
-            <p class="contacts__text"><span> Номер телефона:</span> +7 (961) 310-83-33</p>
-            <p class="contacts__text"><span> Время работы: </span>9:00 - 20:00</p>
-            <div class="contacts__socials">
-                <p class="contacts__socials-header"><span>Мы в соц.сетях:</span> </p>
-                <a href="#" target="_blank"><img class="contacts__socials contacts__socials_tg" src="assets/svg/tg.svg"
-                        alt="tg" /></a>
-                <a href="#" target="_blank"><img class="contacts__socials contacts__socials_tel"
-                        src="assets/svg/inst.svg" alt="inst" /></a>
-                <a href="#" target="_blank"><img class="contacts__socials contacts__socials_wa" src="assets/svg/wa.svg"
-                        alt="wa" /></a>
-            </div>
-        </div>
+      </div>
     </section>
-    <!-- Секция Адрес - ответственный Оля -->
     </main>
     <footer class="footer">
-        <img class="logo2" src="assets/images/logo2.png" alt="Лого" />
-        <p class="p3">Медицинская Лицензия<br /> 61-01-008103</p>
-        <p class="p4">ООО "Мой секрет"<br /> ИНН 6195000723<br /> ОГРН 1186196052547<br /> Ростов-на-Дону</p>
+      <img class="logo2" src="assets/images/logo2.png" alt="Лого" />
+      <div class="footer-data">
+        <p class="p3">Медицинская Лицензия</p>
+        <p class="p3">61-01-008103</p>
+      </div>
+      <div class="footer-data">
+        <p class="p4">ООО "Мой секрет"</p>
+        <p class="p4">ИНН 6195000723</p>
+        <p class="p4">ОГРН 1186196052547</p>
+        <p class="p4">Ростов-на-Дону</p>
+      </div>
     </footer>
-    <!-- Ответственный Ира -->
-    <script type="module" src="assets/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
