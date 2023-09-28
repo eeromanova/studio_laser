@@ -9,22 +9,7 @@
 @import './address';
 @import './footer';
 @import './ourstudio';
-
-body {
-  overflow-x: hidden;
-}
-
-@import "./vars";
-@import "./templatescommon";
-@import "./header";
-@import "./about";
-@import "./price";
-@import "./instructions";
-@import "./blog";
-@import "./reviews";
-@import "./address";
-@import "./footer";
-@import "./article";
+@import './article';
 
 body {
   overflow-x: hidden;
