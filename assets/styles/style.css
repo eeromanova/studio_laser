@@ -592,6 +592,7 @@ video {
 .card-title {
   font-family: "Comfortaa", italic;
   color: var(--unnamed, #4E2956);
+  font-size: 20px;
 }
 
 .card-text {
@@ -1191,8 +1192,18 @@ form .ask-button:hover {
   margin-left: 8vw;
   margin-right: 2vw;
   font-family: "Comfortaa", italic;
-  font-size: 1.5vw;
+  font-size: 23px;
   color: var(--unnamed, #4E2956);
+}
+@media screen and (max-width: 920px) {
+  .laser_main_text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .laser_main_text {
+    font-size: 15px;
+  }
 }
 
 .laser_header {
@@ -1244,8 +1255,18 @@ form .ask-button:hover {
   margin-right: 5vw;
   margin-left: 2vw;
   font-family: "Comfortaa", italic;
-  font-size: 1.5vw;
+  font-size: 23px;
   color: var(--unnamed, #4E2956);
+}
+@media screen and (max-width: 920px) {
+  .employees_main_text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .employees_main_text {
+    font-size: 15px;
+  }
 }
 
 .license {
@@ -1272,7 +1293,7 @@ form .ask-button:hover {
     flex-flow: row wrap;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .employees_main {
     flex-direction: column;
     flex-wrap: wrap;
@@ -1289,11 +1310,6 @@ form .ask-button:hover {
     width: 70vw;
   }
 }
-.body_article {
-  max-width: 1440px;
-  min-width: 320px;
-}
-
 .header_article {
   margin: auto 10%;
   height: 30%;
@@ -1330,28 +1346,40 @@ form .ask-button:hover {
 .article__img {
   float: left;
   margin: 20px;
-  width: 40%;
-  height: 60%;
+  width: 35%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .article__img {
+    width: 90%;
+  }
 }
 
 .article__img1 {
   float: right;
   margin: 0;
-  width: 40%;
-  height: 60%;
+  width: 35%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .article__img1 {
+    width: 90%;
+  }
 }
 
 .article__img3 {
   float: right;
   margin: 10px;
-  width: 40%;
-  height: 30%;
+  width: 35%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .article__img3 {
+    width: 90%;
+  }
 }
 
 .article__p {
@@ -1360,9 +1388,29 @@ form .ask-button:hover {
   margin-right: 20px;
   font-family: "Comfortaa", italic;
 }
+@media screen and (min-width: 1920px) {
+  .article__p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article__p {
+    font-size: 15px;
+  }
+}
 
 .article__ul {
   font-family: "Comfortaa", italic;
+}
+@media screen and (min-width: 1920px) {
+  .article__ul {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article__ul {
+    font-size: 15px;
+  }
 }
 
 .footer_article {

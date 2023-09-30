@@ -38,8 +38,14 @@
     margin-left: 8vw;
     margin-right: 2vw;
     font-family: $fontmain;
-    font-size: 1.5vw;
+    font-size: 23px;
     color: $colortextdark;
+    @media screen and (max-width: 920px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width: 414px) {
+        font-size: 15px;
+    }
 }
 
 .laser_header {
@@ -93,8 +99,14 @@
     margin-right: 5vw;
     margin-left: 2vw;
     font-family: $fontmain;
-    font-size: 1.5vw;
+    font-size: 23px;
     color: $colortextdark;
+    @media screen and (max-width: 920px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width: 414px) {
+        font-size: 15px;
+    }
 }
 
 .license {
@@ -123,7 +135,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .employees_main {
         flex-direction: column;
         flex-wrap: wrap;
